@@ -26,6 +26,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "newspirit";
+  src: url("../../fonts/NewSpiritMediumCondensed.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --helvetica: "helvetica", sans-serif;
   --newspirit: "newspirit", sans-serif;
@@ -204,6 +211,8 @@ header.header-light .actions .available {
   color: #000;
   font-size: clamp(20px, 3vw, 36px);
   margin-bottom: 100px;
+  font-weight: 400;
+  font-family: var(--newspirit);
 }
 
 .home-banner {
@@ -262,11 +271,19 @@ header.header-light .actions .available {
   }
 }
 .home-banner .banner-bg .banner-states {
+  position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 20px;
   max-width: 394px;
   display: flex;
   gap: 45px;
+}
+.home-banner .banner-bg .banner-states .banner-states-top-left {
+  position: absolute;
+  top: -50px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
 }
 .home-banner .banner-bg .banner-states > div span {
   font-family: var(--newspirit);
@@ -833,7 +850,7 @@ header.header-light .actions .available {
 .contact-section .eamil-locaton p,
 .contact-section .eamil-locaton a {
   display: block;
-  font-size: 24px;
+  font-size: 28px;
   color: #fff;
   font-weight: 400;
   font-family: var(--newspirit);
@@ -878,7 +895,7 @@ header.header-light .actions .available {
   display: flex;
   align-items: center;
   gap: 15px;
-  font-size: 26px;
+  font-size: 28px;
   color: #fff;
   font-family: var(--newspirit);
   font-weight: 400;
@@ -887,10 +904,10 @@ header.header-light .actions .available {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  min-width: 44px;
-  height: 44px;
-  border-radius: 44px;
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.0705882353);
   transition: 0.1s linear;
 }
