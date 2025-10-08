@@ -61,9 +61,46 @@ body main {
   max-width: 1900px;
   margin: auto;
 }
+body main.fixed-header {
+  padding-top: 95px;
+}
 body.sidebar-open .sidebar {
   transform: translateY(0);
   visibility: visible;
+}
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  background-color: #1A0600;
+  background-image: url("../../images/preloader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 99;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px 0;
+  font-size: 42px;
+  font-family: var(--newspirit);
+  font-weight: 400;
+  color: #fff;
+  transition: 0.5s ease;
+}
+.preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.preloader .progress {
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.0901960784);
+  border-radius: 80px;
+}
+.preloader .progress span {
+  height: 100%;
+  background-color: #CC3000;
+  border-radius: 80px;
+  transition: width 0.3s ease;
 }
 
 .menu-btn {
@@ -113,7 +150,7 @@ body.sidebar-open .sidebar {
 .sidebar .body .dropdown-content > div a {
   display: block;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 .sidebar .body .dropdown-content > div a sup {
@@ -137,6 +174,19 @@ body.sidebar-open .sidebar {
   margin-top: 15px;
 }
 
+header.header-light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: transform 0.4s ease, background 0.3s ease;
+  transform: translateY(0);
+  z-index: 10;
+}
+header.header-light.hidden {
+  transform: translateY(-100%);
+}
 header .menu {
   background-color: rgba(255, 255, 255, 0.1019607843);
   border: 1px solid rgba(255, 255, 255, 0.0705882353);
@@ -213,6 +263,11 @@ header.header-light .actions .available {
   margin-bottom: 100px;
   font-weight: 400;
   font-family: var(--newspirit);
+}
+@media screen and (max-width: 768px) {
+  .page-desc {
+    margin-bottom: 70px;
+  }
 }
 
 .home-banner {
@@ -355,7 +410,7 @@ header.header-light .actions .available {
     gap: 10px 20px;
   }
   .project-tabs a {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -389,7 +444,7 @@ header.header-light .actions .available {
   border-radius: 24px;
 }
 .projects-section .project-card .project-info {
-  padding-top: 25px;
+  padding-top: 20px;
 }
 .projects-section .project-card .project-info .project-title {
   font-size: 30px;
@@ -401,6 +456,11 @@ header.header-light .actions .available {
 .projects-section .project-card .project-info .project-desc {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.6);
+}
+@media screen and (max-width: 768px) {
+  .projects-section .project-card .project-info {
+    padding-top: 15px;
+  }
 }
 .projects-section .project-card:hover .project-img img {
   transform: scale(1.05);
@@ -585,7 +645,6 @@ header.header-light .actions .available {
 @media screen and (max-width: 768px) {
   .proud-section {
     margin: 0;
-    border-radius: 35px;
     padding-top: 60px;
   }
 }
@@ -599,6 +658,7 @@ header.header-light .actions .available {
   font-family: var(--newspirit);
   font-weight: 400;
   max-width: 876px;
+  line-height: 1.1;
 }
 .proven-design .proven-design-cards {
   display: flex;
@@ -740,7 +800,6 @@ header.header-light .actions .available {
   .proven-design .proven-design-bottom {
     margin: 20px 0 0 0;
     padding: 40px 0;
-    border-radius: 35px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -757,7 +816,6 @@ header.header-light .actions .available {
   font-weight: 400;
   font-family: var(--newspirit);
   font-size: clamp(36px, 4vw, 52px);
-  margin-bottom: 50px;
 }
 .experience-section .experience-card {
   padding: 30px 0;
@@ -772,6 +830,9 @@ header.header-light .actions .available {
   font-weight: 500;
   color: #000;
   margin-bottom: 20px;
+}
+.experience-section .experience-card .date span {
+  color: #008D36;
 }
 .experience-section .experience-card .onsite {
   font-size: 16px;
@@ -795,6 +856,19 @@ header.header-light .actions .available {
   font-size: 16px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6980392157);
+}
+.experience-section .resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #FF6333;
+  color: #fff;
+  font-family: var(--helvetica);
+  font-weight: 500;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .tech-stack {
@@ -985,10 +1059,15 @@ header.header-light .actions .available {
   color: rgba(0, 0, 0, 0.6);
 }
 .project-detail-section .project-info .info-desc {
-  font-size: 24px;
+  font-size: 20px;
   color: #000;
   font-weight: 400;
   font-family: var(--newspirit);
+}
+@media screen and (max-width: 992px) {
+  .project-detail-section .project-info {
+    margin-bottom: 50px;
+  }
 }
 .project-detail-section .lets-connect-card {
   position: relative;
