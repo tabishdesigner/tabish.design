@@ -219,8 +219,8 @@ header.header-light .actions .available {
   padding: 10px;
 }
 .home-banner .banner-bg {
-  padding: 30px 0 50px 0;
-  background-image: url("../../images/banner-bg.webp");
+  padding: 30px 0;
+  background-image: url("../../images/banner-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -228,7 +228,7 @@ header.header-light .actions .available {
 }
 .home-banner .banner-bg .banner-content {
   margin-top: 120px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .home-banner .banner-bg .banner-content span {
   display: inline-block;
@@ -288,13 +288,14 @@ header.header-light .actions .available {
 .home-banner .banner-bg .banner-states > div span {
   font-family: var(--newspirit);
   font-size: clamp(36px, 4vw, 55px);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
+  line-height: 1;
   display: block;
   color: #fff;
 }
 .home-banner .banner-bg .banner-states > div p {
   font-size: 16px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
 }
 .home-banner .banner-bg .tabish-img {
   min-width: 117px;
@@ -312,6 +313,8 @@ header.header-light .actions .available {
 @media screen and (max-width: 768px) {
   .home-banner .banner-bg {
     background-image: url("../../images/banner-bg-mob.png");
+    background-position: bottom;
+    background-size: 101%;
   }
   .home-banner .banner-bg .tabish-img {
     min-width: 83px;
@@ -327,8 +330,7 @@ header.header-light .actions .available {
     padding: 0;
   }
   .home-banner .banner-bg {
-    border-radius: 0;
-    padding: 30px 0 10px 0;
+    padding: 30px 0 20px 0;
   }
 }
 
@@ -394,7 +396,7 @@ header.header-light .actions .available {
   color: #000;
   font-family: var(--newspirit);
   font-weight: 400;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
 .projects-section .project-card .project-info .project-desc {
   font-size: 16px;
@@ -582,7 +584,9 @@ header.header-light .actions .available {
 }
 @media screen and (max-width: 768px) {
   .proud-section {
-    margin: 0 6px;
+    margin: 0;
+    border-radius: 35px;
+    padding-top: 60px;
   }
 }
 
@@ -673,6 +677,11 @@ header.header-light .actions .available {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
 }
+@media screen and (max-width: 768px) {
+  .proven-design .proven-design-cards .proven-card:last-child {
+    flex: 1;
+  }
+}
 @media screen and (min-width: 768px) {
   .proven-design .proven-design-cards .proven-card {
     width: calc(33.33% - 12px);
@@ -702,6 +711,7 @@ header.header-light .actions .available {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  margin-bottom: 30px;
 }
 .proven-design .proven-design-bottom .title::before {
   content: "";
@@ -712,6 +722,31 @@ header.header-light .actions .available {
   border-radius: 10px;
   background-color: #FF563F;
   margin-top: 5px;
+}
+.proven-design .proven-design-bottom a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 25px;
+  background-color: #FF6333;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  margin-inline-start: 20px;
+}
+@media screen and (max-width: 768px) {
+  .proven-design .proven-design-bottom {
+    margin: 20px 0 0 0;
+    padding: 40px 0;
+    border-radius: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .proven-design {
+    padding: 50px 0;
+  }
 }
 
 .experience-section {
@@ -924,7 +959,7 @@ header.header-light .actions .available {
 }
 
 .project-detail-section {
-  padding: 40px 0;
+  padding: 40px 0 80px 0;
 }
 .project-detail-section .project-info {
   position: sticky;
