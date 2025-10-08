@@ -74,7 +74,7 @@
     </div>
   </div>
 
-  <main>
+  <main class="fixed-header">
 
     <header class="header-light">
       <div class="container">
@@ -234,6 +234,18 @@
 
   <script>
     
+    let lastScrollTop = 0;
+    const header = document.querySelector("header.header-light");
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScroll > lastScrollTop && currentScroll > 100) {
+        header.classList.add("hidden");
+      } else if (currentScroll < lastScrollTop) {
+        header.classList.remove("hidden");
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+
     document.addEventListener("DOMContentLoaded", () => {
       const preloader = document.getElementById("preloader");
       const progressBar = document.getElementById("progressBar");
