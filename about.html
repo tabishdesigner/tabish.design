@@ -35,6 +35,22 @@
 
 <body>
 
+  <div class="preloader" id="preloader">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">Loading...</div>
+        <div class="col-6 text-end"><span id="loadPercent">0%</span></div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="progress">
+            <span id="progressBar"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="sidebar">
     <div class="head">
       <div class="logo">
@@ -51,7 +67,7 @@
       <div class="dropdown-content">
         <div>
           <a href="./">Home</a>
-          <a href="./projects">Projects <sup>10</sup></a>
+          <a href="./projects">Projects <sup>21</sup></a>
           <a href="./about">About</a>
         </div>
         <a href="./contact" class="contact">Contact</a>
@@ -72,7 +88,7 @@
           <div class="col-4 d-lg-flex d-none d-flex justify-content-center">
             <div class="menu">
               <a href="./">Home</a>
-              <a href="./projects">Projects <sup>10</sup></a>
+              <a href="./projects">Projects <sup>21</sup></a>
               <a href="./about">About</a>
             </div>
           </div>
@@ -102,8 +118,8 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-7 order-md-1 order-2 mt-md-0 mt-5">
-            <div class="title">Hey there, I’m Tabish</div>
-            <p class="desc">I am a UI/UX and Graphic Designer with over 7 years of experience creating intuitive, user-centered digital experiences and visually compelling designs. I specialize in branding, web apps, mobile experiences, and graphic design, combining creativity with strategy to deliver solutions that are both functional and aesthetically engaging.</p>
+            <div class="title mb-4">Hey there, I’m Tabish</div>
+            <p class="desc">I am a UI/UX and Graphic Designer with over 6 years of experience creating intuitive, user-centered digital experiences and visually compelling designs. I specialize in branding, web apps, mobile experiences, and graphic design, combining creativity with strategy to deliver solutions that are both functional and aesthetically engaging.</p>
             <p class="desc mb-5">I thrive in collaborative environments, using wireframing, prototyping, visual storytelling, and design systems to help businesses enhance user engagement and achieve results. With a strong background in both digital and graphic design, I craft experiences that are not just seen, but genuinely felt.</p>
             <a href="" class="resume">
               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -311,7 +327,7 @@
           <div class="row">
             <div class="col-12 d-flex align-items-center justify-content-between gap-3">
               <div class="txt-start">Brand Identity & Creative Design</div>
-              <div class="txt-end">.04</div>
+              <div class="txt-end">.05</div>
             </div>
           </div>
         </div>
@@ -357,54 +373,66 @@
     <div class="experience-section">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="title">Experience</div>
+          <div class="col-md-7">
+            <div class="title">Professional Experience</div>
+          </div>
+          <div class="col-md-5 text-md-end">
+            <a href="" class="resume">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.47902 23.5828C8.46127 23.6855 9.69407 23.6855 11.2352 23.6855H12.1105C14.0035 23.6855 15.5174 23.6856 16.7054 23.5347C17.9299 23.3792 18.9552 23.0485 19.7741 22.275C20.6013 21.4936 20.9627 20.5017 21.1312 19.3176C21.2925 18.184 21.2925 16.7441 21.2925 14.9654V8.81558C21.2925 8.01643 21.2925 7.36887 21.2578 6.84029C21.222 6.29566 21.1463 5.80999 20.9631 5.34583C20.4343 4.00652 19.3258 2.97225 17.9493 2.48724C17.0905 2.18466 15.6184 2.18505 14.0634 2.18559C11.2238 2.18523 9.53713 2.18502 8.15469 2.6721C5.9347 3.45427 4.16096 5.11702 3.31757 7.25308C3.03646 7.96504 2.91192 8.72974 2.85167 9.64659C2.79248 10.5473 2.79248 11.6599 2.79248 13.0782V15.6617C2.79246 17.1098 2.79244 18.2825 2.90233 19.2198C3.01644 20.1932 3.25969 21.0311 3.82952 21.7501C4.1247 22.1226 4.47325 22.4514 4.86362 22.7274C5.60838 23.2541 6.4696 23.4772 7.47902 23.5828ZM18.4394 20.8516C18.0462 21.223 17.4902 21.4648 16.4609 21.5956C15.4094 21.7291 14.0192 21.7309 12.0425 21.7309H11.2901C9.68146 21.7309 8.55033 21.7297 7.68088 21.6387C6.82696 21.5494 6.34303 21.3827 5.9852 21.1296C5.74375 20.9589 5.53137 20.7578 5.35358 20.5334C5.09802 20.2109 4.92857 19.7781 4.83634 18.9913C4.74141 18.1816 4.73983 17.1243 4.73983 15.6008L4.73975 12.7006C4.73973 12.4336 4.73991 11.795 5.02052 11.3229C5.19346 11.0319 5.41487 10.7888 5.64232 10.665C6.00883 10.4654 6.42903 10.3521 6.87569 10.3521L7.91606 10.3886C8.29615 10.3965 8.73969 10.3845 9.16784 10.2697C10.0018 10.0463 10.6532 9.39487 10.8767 8.5609C10.9914 8.13275 11.0034 7.68921 10.9955 7.30912L10.959 6.26875C10.959 5.80106 11.0834 5.39393 11.3008 5.01552C11.4275 4.79493 11.6482 4.59304 11.953 4.41573C12.4151 4.14682 12.9685 4.14433 13.3067 4.1428C13.6448 4.14128 14.0016 4.14011 14.2996 4.14011C16.1338 4.14011 16.8009 4.15406 17.3043 4.33141C18.1769 4.63887 18.8426 5.28051 19.1527 6.06588C19.2303 6.26252 19.2852 6.52094 19.3146 6.96889C19.3446 7.42556 19.3451 8.00851 19.3451 8.84877V14.8901C19.3451 16.7621 19.3428 18.0618 19.2034 19.0412C19.0689 19.9861 18.8243 20.4881 18.4394 20.8516Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.043 17.9355C17.043 18.4878 16.5953 18.9355 16.043 18.9355L9.04297 18.9355C8.49068 18.9355 8.04297 18.4878 8.04297 17.9355C8.04297 17.3833 8.49068 16.9355 9.04297 16.9355L16.043 16.9355C16.5953 16.9355 17.043 17.3833 17.043 17.9355Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.043 13.9355C17.043 14.4878 16.5953 14.9355 16.043 14.9355L13.043 14.9355C12.4907 14.9355 12.043 14.4878 12.043 13.9355C12.043 13.3833 12.4907 12.9355 13.043 12.9355L16.043 12.9355C16.5953 12.9355 17.043 13.3833 17.043 13.9355Z" fill="white"/>
+              </svg>
+              Download my resume
+            </a>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-12">
             <div class="experience-card">
               <div class="row">
                 <div class="col-md-4">
-                  <div class="date">Jul . 2022  - ongoing</div>
+                  <div class="date">Dec. 2024 — <span>Ongoing</span></div>
                   <div class="onsite">Remotely</div>
                 </div>
                 <div class="col-md-8">
-                  <div class="card-title">Senior UI/UX Designer</div>
+                  <div class="card-title">Mid Level UI UX Designer</div>
                   <div class="card-subtitle">Compass design co</div>
-                  <p class="card-desc">- Assisted senior designers in creating wireframes, mockups, and prototypes for various digital projects.</p>
-                  <p class="card-desc">- Assisted senior designers in creating wireframes, mockups, and prototypes for various digital projects.</p>
-                  <p class="card-desc">- Contributed to the improvement of the user interface and user experience of existing digital products.</p>
+                  <p class="card-desc">Lead the end-to-end UX process for digital products, improving usability and task completion rates by 25%.</p>
+                  <p class="card-desc">Built reusable components and design systems, reducing design and development time by 20%.</p>
+                  <p class="card-desc">Developed high-fidelity mockups to align with client branding and project goals.</p>
+                  <p class="card-desc">Collaborated with engineers to ensure designs were effectively implemented.</p>
                 </div>
               </div>
             </div>
             <div class="experience-card">
               <div class="row">
                 <div class="col-md-4">
-                  <div class="date">Jul . 2022  - ongoing</div>
-                  <div class="onsite">Remotely</div>
+                  <div class="date">Aug 2022  — Nov 2024</div>
+                  <div class="onsite">Onsite</div>
                 </div>
                 <div class="col-md-8">
-                  <div class="card-title">Senior UI/UX Designer</div>
-                  <div class="card-subtitle">Compass design co</div>
-                  <p class="card-desc">- Assisted senior designers in creating wireframes, mockups, and prototypes for various digital projects.</p>
-                  <p class="card-desc">- Assisted senior designers in creating wireframes, mockups, and prototypes for various digital projects.</p>
-                  <p class="card-desc">- Contributed to the improvement of the user interface and user experience of existing digital products.</p>
+                  <div class="card-title">Senior UI UX Designer</div>
+                  <div class="card-subtitle">Digital Graphiks-Dubai</div>
+                  <p class="card-desc">Designed LMS, eCommerce, and real estate portals for leading Dubai brands like Tower Plaza Hotel, Fast Marine Boat, SS Lootah, and others, increasing user satisfaction by 30%.</p>
+                  <p class="card-desc">Delivered high-fidelity prototypes and mockups for smooth design-to-development transitions.</p>
+                  <p class="card-desc">Implemented scalable UX solutions to enhance usability and engagement across platforms.</p>
+                  <p class="card-desc">Collaborated with developers and clients to maintain brand consistency and visual quality.</p>
                 </div>
               </div>
             </div>
             <div class="experience-card">
               <div class="row">
                 <div class="col-md-4">
-                  <div class="date">Jul . 2022  - ongoing</div>
+                  <div class="date">Jan 2022  — Jul 2022</div>
                   <div class="onsite">Remotely</div>
                 </div>
                 <div class="col-md-8">
-                  <div class="card-title">Senior UI/UX Designer</div>
-                  <div class="card-subtitle">Compass design co</div>
-                  <p class="card-desc">- Assisted senior designers in creating wireframes, mockups, and prototypes for various digital projects.</p>
-                  <p class="card-desc">- Assisted senior designers in creating wireframes, mockups, and prototypes for various digital projects.</p>
-                  <p class="card-desc">- Contributed to the improvement of the user interface and user experience of existing digital products.</p>
+                  <div class="card-title">UI/UX Designer</div>
+                  <div class="card-subtitle">Hudasoft</div>
+                  <p class="card-desc">Designed data-driven dashboards and SaaS interfaces, improving usability and workflow efficiency by 25%.</p>
+                  <p class="card-desc">Translated complex ideas into clean, functional UI designs, reducing revisions by 15%</p>
+                  <p class="card-desc">Enhanced user engagement and retention through improved interaction design and accessibility.</p>
                 </div>
               </div>
             </div>
@@ -551,6 +579,38 @@
   </main>
 
   <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const preloader = document.getElementById("preloader");
+      const progressBar = document.getElementById("progressBar");
+      const loadPercent = document.getElementById("loadPercent");
+      let progress = 0;
+
+      const interval = setInterval(() => {
+        progress += Math.floor(Math.random() * 8) + 3;
+        if (progress > 100) progress = 100;
+
+        progressBar.style.width = progress + "%";
+        loadPercent.textContent = progress + "%";
+
+        if (progress === 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            preloader.classList.add("hidden");
+            document.body.style.overflow = "auto";
+
+            setTimeout(() => {
+              preloader.remove();
+              const currentScript = document.currentScript;
+              if (currentScript) currentScript.remove();
+            }, 300);
+          }, 300);
+        }
+      }, 80);
+
+      document.body.style.overflow = "hidden";
+    });
+    
     document.querySelectorAll(".open-sidebar").forEach((element) => {
       element.addEventListener("click", function () {
         document.body.classList.add("sidebar-open");

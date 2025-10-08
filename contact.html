@@ -35,6 +35,22 @@
 
 <body>
 
+  <div class="preloader" id="preloader">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">Loading...</div>
+        <div class="col-6 text-end"><span id="loadPercent">0%</span></div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="progress">
+            <span id="progressBar"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="sidebar">
     <div class="head">
       <div class="logo">
@@ -51,7 +67,7 @@
       <div class="dropdown-content">
         <div>
           <a href="./">Home</a>
-          <a href="./projects">Projects <sup>10</sup></a>
+          <a href="./projects">Projects <sup>21</sup></a>
           <a href="./about">About</a>
         </div>
         <a href="./contact" class="contact">Contact</a>
@@ -72,7 +88,7 @@
           <div class="col-4 d-lg-flex d-none d-flex justify-content-center">
             <div class="menu">
               <a href="./">Home</a>
-              <a href="./projects">Projects <sup>10</sup></a>
+              <a href="./projects">Projects <sup>21</sup></a>
               <a href="./about">About</a>
             </div>
           </div>
@@ -101,14 +117,14 @@
 
     <div class="contact-section">
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row">
           <div class="col-lg-5">
             <div class="eamil-locaton">
               <span>EMAIL:</span>
               <a href="mailto:tabishkhanji12@gmail.com">tabishkhanji12@gmail.com <img class="ms-2" src="./assets/images/email-up-arrow.svg" width="26" alt="email-up-arrow"></a>
               <span>PHONE:</span>
-              <a href="tel:+971 56 796 6760">
-                <img src="./assets/images/whatsapp.svg" style="margin-top: -4px;" width="20" alt="whatsapp"> +971 56 796 6760 <img class="ms-2" src="./assets/images/email-up-arrow.svg" width="26" alt="email-up-arrow">
+              <a href="tel:+971507922428">
+                <img src="./assets/images/whatsapp.svg" style="margin-top: -4px;" width="20" alt="whatsapp"> +971 50 792 2428 <img class="ms-2" src="./assets/images/email-up-arrow.svg" width="26" alt="email-up-arrow">
               </a>
               <span>LOCATION:</span>
               <p>Dubai, United Arab Emirates</p>
@@ -256,6 +272,38 @@
   </main>
 
   <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const preloader = document.getElementById("preloader");
+      const progressBar = document.getElementById("progressBar");
+      const loadPercent = document.getElementById("loadPercent");
+      let progress = 0;
+
+      const interval = setInterval(() => {
+        progress += Math.floor(Math.random() * 8) + 3;
+        if (progress > 100) progress = 100;
+
+        progressBar.style.width = progress + "%";
+        loadPercent.textContent = progress + "%";
+
+        if (progress === 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            preloader.classList.add("hidden");
+            document.body.style.overflow = "auto";
+
+            setTimeout(() => {
+              preloader.remove();
+              const currentScript = document.currentScript;
+              if (currentScript) currentScript.remove();
+            }, 300);
+          }, 300);
+        }
+      }, 80);
+
+      document.body.style.overflow = "hidden";
+    });
+
     document.querySelectorAll(".open-sidebar").forEach((element) => {
       element.addEventListener("click", function () {
         document.body.classList.add("sidebar-open");
