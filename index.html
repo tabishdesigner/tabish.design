@@ -82,7 +82,7 @@
           <div class="row">
             <div class="col-12">
               <header>
-                <div class="container">
+                <div class="container p-md-0">
                   <div class="row align-items-center">
                     <div class="col-lg-4 col-5">
                       <div class="logo">
@@ -119,7 +119,7 @@
             </div>
           </div>
           <div class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 px-md-2 px-4">
               <div class="banner-states">
                 <img src="./assets/images/banner-states-top-left.png" class="banner-states-top-left" alt="banner-states-top-left" />
                 <div>
@@ -127,7 +127,7 @@
                   <p>Projects <br> Completed</p>
                 </div>
                 <div>
-                  <span>125+</span>
+                  <span>10+</span>
                   <p>Countries <br> Reached</p>
                 </div>
                 <div>
@@ -136,7 +136,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 mt-lg-0 mt-5 d-flex justify-content-between align-items-center gap-3 mb-0 banner-content">
+            <div class="col-lg-6 px-md-2 px-4 mt-lg-0 mt-5 d-flex justify-content-between align-items-center gap-3 mb-0 banner-content">
               <p>I design with purpose, blending creativity and strategy to solve real problems through user-centered thinking. My focus is on crafting intuitive experiences and visuals that connect people with products.</p>
               <div class="tabish-img">
                 <img src="./assets/images/tabish.png" alt="tabish" width="99" />
@@ -268,11 +268,11 @@
           <span><img src="./assets/images/client-img-12.png" width="242" alt=""></span>
         </div>
       </div>
-      <div class="px-3 mb-5"><img src="./assets/images/what-i-create.png" class="w-100" alt="And Here’s What I Create">
+      <div class="px-4 mb-5"><img src="./assets/images/what-i-create.png" class="w-100" alt="And Here’s What I Create">
       </div>
       <div class="created-item">
         <div class="container">
-          <div class="row">
+          <div class="row m-0">
             <div class="col-12 d-flex align-items-center justify-content-between gap-3">
               <div class="txt-start">User-Centered Design</div>
               <div class="txt-end">.01</div>
@@ -318,7 +318,7 @@
       </div>
       <div class="created-item">
         <div class="container">
-          <div class="row">
+          <div class="row m-0">
             <div class="col-12 d-flex align-items-center justify-content-between gap-3">
               <div class="txt-start">Web & Mobile App Interfaces</div>
               <div class="txt-end">.02</div>
@@ -364,7 +364,7 @@
       </div>
       <div class="created-item">
         <div class="container">
-          <div class="row">
+          <div class="row m-0">
             <div class="col-12 d-flex align-items-center justify-content-between gap-3">
               <div class="txt-start">SaaS Platforms</div>
               <div class="txt-end">.03</div>
@@ -410,7 +410,7 @@
       </div>
       <div class="created-item">
         <div class="container">
-          <div class="row">
+          <div class="row m-0">
             <div class="col-12 d-flex align-items-center justify-content-between gap-3">
               <div class="txt-start">E-commerce Products</div>
               <div class="txt-end">.04</div>
@@ -456,7 +456,7 @@
       </div>
       <div class="created-item">
         <div class="container">
-          <div class="row">
+          <div class="row m-0">
             <div class="col-12 d-flex align-items-center justify-content-between gap-3">
               <div class="txt-start">Brand Identity & Creative Design</div>
               <div class="txt-end">.05</div>
@@ -716,12 +716,14 @@
       const triggerPoint = window.innerHeight;
       if (currentScroll > triggerPoint) {
         header.classList.add("header-light");
+        header.querySelector(".logo img").src = "./assets/images/logo-dark.svg";
         if (currentScroll > lastScrollTop && currentScroll > 100) {
           header.classList.add("hidden");
         } else if (currentScroll < lastScrollTop) {
           header.classList.remove("hidden");
         }
       } else {
+        header.querySelector(".logo img").src = "./assets/images/logo.svg";
         header.classList.remove("header-light", "hidden");
       }
       lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
