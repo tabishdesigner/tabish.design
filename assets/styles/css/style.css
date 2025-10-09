@@ -843,7 +843,7 @@ header.header-light .actions .available {
   font-size: 38px;
   font-family: var(--newspirit);
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: #000;
 }
 .experience-section .experience-card .card-subtitle {
