@@ -86,6 +86,7 @@ body.sidebar-open .sidebar {
   font-weight: 400;
   color: #fff;
   transition: 0.5s ease;
+  z-index: 100;
 }
 .preloader.hidden {
   opacity: 0;
@@ -101,6 +102,11 @@ body.sidebar-open .sidebar {
   background-color: #CC3000;
   border-radius: 80px;
   transition: width 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .preloader {
+    font-size: 30px;
+  }
 }
 
 .menu-btn {
@@ -128,7 +134,7 @@ body.sidebar-open .sidebar {
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 10;
+  z-index: 100;
   transition: all 0.3s ease;
 }
 .sidebar .head {
@@ -174,19 +180,6 @@ body.sidebar-open .sidebar {
   margin-top: 15px;
 }
 
-header.header-light {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  transition: transform 0.4s ease, background 0.3s ease;
-  transform: translateY(0);
-  z-index: 10;
-}
-header.header-light.hidden {
-  transform: translateY(-100%);
-}
 header .menu {
   background-color: rgba(255, 255, 255, 0.1019607843);
   border: 1px solid rgba(255, 255, 255, 0.0705882353);
@@ -238,6 +231,17 @@ header .actions .contact {
 header.header-light {
   padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.0588235294);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: transform 0.4s ease, background 0.3s ease;
+  transform: translateY(0);
+  z-index: 99;
+}
+header.header-light.hidden {
+  transform: translateY(-100%);
 }
 header.header-light .menu {
   background-color: #330C00;
@@ -245,6 +249,11 @@ header.header-light .menu {
 header.header-light .actions .available {
   color: #000;
   background-color: rgba(51, 12, 0, 0.0588235294);
+}
+@media screen and (max-width: 768px) {
+  header.header-light {
+    padding: 10px 0;
+  }
 }
 
 .page-title {
@@ -352,6 +361,11 @@ header.header-light .actions .available {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 768px) {
+  .home-banner .banner-bg .banner-states > div p {
+    font-size: 13px;
+  }
+}
 .home-banner .banner-bg .tabish-img {
   min-width: 117px;
   width: 117px;
@@ -370,6 +384,7 @@ header.header-light .actions .available {
     background-image: url("../../images/banner-bg-mob.png");
     background-position: bottom;
     background-size: 101%;
+    border-radius: 0;
   }
   .home-banner .banner-bg .tabish-img {
     min-width: 83px;
@@ -410,7 +425,7 @@ header.header-light .actions .available {
     gap: 10px 20px;
   }
   .project-tabs a {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
@@ -590,9 +605,9 @@ header.header-light .actions .available {
   font-weight: 400;
 }
 .proud-section .created-item .txt-end {
-  font-size: 26px;
+  font-size: 24px;
   color: #FF6333;
-  font-weight: 700;
+  font-weight: 400;
 }
 .proud-section .created-item:hover .created-marquee {
   top: 0;
@@ -646,6 +661,9 @@ header.header-light .actions .available {
   .proud-section {
     margin: 0;
     padding-top: 60px;
+  }
+  .proud-section .created-item .txt-end {
+    font-size: 20px;
   }
 }
 
