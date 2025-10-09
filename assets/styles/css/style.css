@@ -853,7 +853,7 @@ header.header-light .actions .available {
   margin-bottom: 30px;
 }
 .experience-section .experience-card .card-desc {
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6980392157);
 }
