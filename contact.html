@@ -123,7 +123,7 @@
               <span>EMAIL:</span>
               <a href="mailto:tabishkhanji12@gmail.com">tabishkhanji12@gmail.com <img class="ms-2" src="./assets/images/email-up-arrow.svg" width="26" alt="email-up-arrow"></a>
               <span>PHONE:</span>
-              <a href="tel:+971507922428">
+              <a href="#" id="whatsapp">
                 <img src="./assets/images/whatsapp.svg" style="margin-top: -4px;" width="20" alt="whatsapp"> +971 50 792 2428 <img class="ms-2" src="./assets/images/email-up-arrow.svg" width="26" alt="email-up-arrow">
               </a>
               <span>LOCATION:</span>
@@ -272,6 +272,33 @@
   </main>
 
   <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const whatsappBtn = document.getElementById("whatsapp");
+
+        whatsappBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Your WhatsApp number (international format, no + or 00)
+          const phoneNumber = "971507922428";
+          // Your message
+          const message = "Hello, I would like to know more about your portfolio.";
+
+          // Encode message to make it URL-safe
+          const encodedMessage = encodeURIComponent(message);
+
+          // Detect device type
+          const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+          // Select correct WhatsApp link
+          const link = isMobile
+            ? `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+            : `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+          // Open in a new tab
+          window.open(link, "_blank");
+        });
+      });
 
     let lastScrollTop = 0;
     const header = document.querySelector("header.header-light");
