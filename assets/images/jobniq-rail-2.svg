@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" width="1100" height="760" role="img" aria-label="Match scoring placeholder">
+  <rect width="1100" height="760" fill="#F5F5F5"/>
+  <rect x="42" y="42" width="1016" height="57" rx="17" fill="#ffffff" stroke="rgba(0,0,0,0.10)"/>
+  <circle cx="70.5" cy="70.5" r="10" fill="#FF6333"/>
+  <rect x="99" y="63.66" width="173" height="14" rx="7" fill="rgba(0,0,0,0.10)"/>
+  <rect x="42" y="128" width="173" height="590" rx="17" fill="#ffffff" stroke="rgba(0,0,0,0.10)"/>
+  <rect x="244" y="128" width="814" height="590" rx="17" fill="#ffffff" stroke="rgba(0,0,0,0.10)"/>
+  <rect x="63" y="199" width="131" height="32" rx="16" fill="#FF6333" opacity="0.9"/>
+  <rect x="63" y="276" width="104" height="32" rx="16" fill="rgba(0,0,0,0.10)" opacity="1"/>
+  <rect x="63" y="353" width="104" height="32" rx="16" fill="rgba(0,0,0,0.10)" opacity="1"/>
+  <rect x="63" y="430" width="104" height="32" rx="16" fill="rgba(0,0,0,0.10)" opacity="1"/>
+  <rect x="63" y="507" width="104" height="32" rx="16" fill="rgba(0,0,0,0.10)" opacity="1"/>
+  <rect x="277" y="187" width="700" height="44" rx="22" fill="rgba(0,0,0,0.10)"/>
+  <rect x="277" y="305" width="602" height="44" rx="22" fill="rgba(0,0,0,0.10)"/>
+  <rect x="277" y="423" width="505" height="44" rx="22" fill="rgba(0,0,0,0.10)"/>
+  <rect x="277" y="541" width="407" height="44" rx="22" fill="rgba(0,0,0,0.10)"/>
+  <text x="550" y="385.7" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="57" font-weight="700" fill="#1C0C08">Match scoring</text>
+  <text x="550" y="434.15" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="rgba(0,0,0,0.45)">rail 2 of 5</text>
+</svg>

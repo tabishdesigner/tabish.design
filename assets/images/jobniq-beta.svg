@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 920" width="1600" height="920" role="img" aria-label="Beta dashboard placeholder">
+  <rect width="1600" height="920" fill="#F5F5F5"/>
+  <rect x="51" y="51" width="1498" height="69" rx="20" fill="#ffffff" stroke="rgba(0,0,0,0.10)"/>
+  <circle cx="85.5" cy="85.5" r="12" fill="#FF6333"/>
+  <rect x="120" y="77.22" width="255" height="17" rx="8" fill="rgba(0,0,0,0.10)"/>
+  <rect x="51" y="156" width="255" height="713" rx="20" fill="#ffffff" stroke="rgba(0,0,0,0.10)"/>
+  <rect x="342" y="156" width="1207" height="713" rx="20" fill="#ffffff" stroke="rgba(0,0,0,0.10)"/>
+  <rect x="82" y="242" width="194" height="39" rx="20" fill="#FF6333" opacity="0.9"/>
+  <rect x="82" y="335" width="153" height="39" rx="20" fill="rgba(0,0,0,0.10)" opacity="1"/>
+  <rect x="82" y="428" width="153" height="39" rx="20" fill="rgba(0,0,0,0.10)" opacity="1"/>
+  <rect x="82" y="521" width="153" height="39" rx="20" fill="rgba(0,0,0,0.10)" opacity="1"/>
+  <rect x="82" y="614" width="153" height="39" rx="20" fill="rgba(0,0,0,0.10)" opacity="1"/>
+  <rect x="390" y="227" width="1038" height="53" rx="27" fill="rgba(0,0,0,0.10)"/>
+  <rect x="390" y="370" width="893" height="53" rx="27" fill="rgba(0,0,0,0.10)"/>
+  <rect x="390" y="513" width="748" height="53" rx="27" fill="rgba(0,0,0,0.10)"/>
+  <rect x="390" y="656" width="604" height="53" rx="27" fill="rgba(0,0,0,0.10)"/>
+  <text x="800" y="466.9" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="69" font-weight="700" fill="#1C0C08">Beta dashboard</text>
+  <text x="800" y="525.55" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="31" fill="rgba(0,0,0,0.45)">full-width product screen</text>
+</svg>

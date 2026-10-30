@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>JobnIQ — Case Study</title>
+  <meta name="description" content="How JobnIQ compresses end-to-end recruitment from weeks to days — the research, the workflow redesign, the AI decisions and what the beta showed." />
+  <meta name="keywords" content="" />
+
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="JobnIQ — Reshaping end-to-end recruitment with AI" />
+  <meta property="og:description" content="How JobnIQ compresses end-to-end recruitment from weeks to days — the research, the workflow redesign, the AI decisions and what the beta showed." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="./assets/images/jobniq-recruiter-dashboard.jpg" />
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://tabishdesigner.github.io/tabish.design/jobniq" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
+
+  <!-- The design system section is a live specimen, so it loads JobnIQ's own
+       faces: Inter for UI, Great Vibes for the typed-signature preview. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./assets/styles/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./assets/styles/css/style.css">
+  <link rel="stylesheet" href="./assets/styles/css/nav-fit.css">
+  <link rel="stylesheet" href="./assets/styles/css/case-study.css">
+
+</head>
+
+<body>
+
+  <div class="preloader" id="preloader">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">Loading...</div>
+        <div class="col-6 text-end"><span id="loadPercent">0%</span></div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="progress">
+            <span id="progressBar"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <div class="head">
+      <div class="logo">
+        <img src="./assets/images/logo.svg" alt="logo" width="126" />
+      </div>
+      <div class="menu-btn close-sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+        </svg>
+      </div>
+    </div>
+    <div class="body">
+      <div class="dropdown-content">
+        <div>
+          <a href="./">Home</a>
+          <a href="./projects">Projects <sup>22</sup></a>
+          <a href="./case-studies">Case Studies</a>
+          <a href="./about">About</a>
+        </div>
+        <a href="./contact" class="contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="fixed-header">
+
+    <header class="header-light">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="col-lg-4 col-5">
+            <div class="logo">
+              <a href="./"><img src="./assets/images/logo-dark.svg" alt="logo" width="126" /></a>
+            </div>
+          </div>
+          <div class="col-4 d-lg-flex d-none d-flex justify-content-center">
+            <div class="menu">
+              <a href="./">Home</a>
+              <a href="./projects">Projects <sup>22</sup></a>
+              <a href="./case-studies">Case Studies</a>
+              <a href="./about">About</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-7 d-flex justify-content-end">
+            <div class="actions d-lg-flex d-none">
+              <a href="./contact" class="available">Available for work</a>
+              <a href="./contact" class="contact">Contact</a>
+            </div>
+            <div class="menu-btn open-sidebar d-lg-none d-flex"><img src="./assets/images/menu-btn.svg" width="15" alt="menu-btn" /></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="cs-progress" aria-hidden="true"><span></span></div>
+
+    <!-- ====================================================== hero ===== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-hero">
+        <div class="container">
+          <div class="cs-hero-meta">
+            <span class="cs-hero-tag">Case study 01</span>
+            <span>AI recruitment platform &middot; 2026</span>
+          </div>
+          <div class="row">
+            <div class="col-lg-8">
+              <h1>JobnIQ</h1>
+              <div class="cs-hero-sub">Reshaping end-to-end recruitment with AI.</div>
+              <p class="cs-hero-body">Compressing hiring from weeks to days by taking the manual work out of job
+                creation, candidate matching, screening and interview scheduling — so recruiters spend their time on
+                judgement instead of admin.</p>
+              <div class="cs-scroll-cue"><i></i> Scroll to read</div>
+            </div>
+            <div class="col-lg-4 mt-lg-0 mt-5">
+              <dl class="cs-facts">
+                <div class="cs-fact"><dt>Role</dt><dd>Product Designer — end to end</dd></div>
+                <div class="cs-fact"><dt>Timeline</dt><dd>2025 — ongoing</dd></div>
+                <div class="cs-fact"><dt>Team</dt><dd>1 designer, 4 engineers, 1 PM</dd></div>
+                <div class="cs-fact"><dt>Scope</dt><dd>Web app, design system</dd></div>
+              </dl>
+            </div>
+          </div>
+          <div class="cs-hero-shot">
+            <img src="./assets/images/jobniq-recruiter-dashboard.jpg" alt="JobnIQ recruiter workspace — open roles, hiring funnel and the day's interviews" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================== marquee ====== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-marquee">
+        <div class="cs-marquee-track" aria-hidden="true"><span>Research</span><span>Product design</span><span>AI workflows</span><span>Design system</span><span>Prototyping</span><span>Shipping</span></div>
+        <div class="cs-marquee-track" aria-hidden="true"><span>Research</span><span>Product design</span><span>AI workflows</span><span>Design system</span><span>Prototyping</span><span>Shipping</span></div>
+      </div>
+    </section>
+
+    <!-- ================================================ statement ====== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-light cs-section">
+        <div class="container">
+          <div class="cs-statement" data-statement>
+            <p><span class="cs-word">Recruiters</span> <span class="cs-word">did</span> <span class="cs-word">not</span> <span class="cs-word">need</span> <span class="cs-word">another</span> <span class="cs-word">dashboard.</span> <span class="cs-word">They</span> <span class="cs-word">needed</span> <span class="cs-word">the</span> <span class="cs-word is-key">busywork</span> <span class="cs-word">between</span> <span class="cs-word">the</span> <span class="cs-word">decisions</span> <span class="cs-word">to</span> <span class="cs-word is-key">disappear.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================== problem ===== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-dark cs-section">
+        <div class="container">
+          <div class="cs-head">
+            <div>
+              <div class="cs-eyebrow" data-cs="fade">01 &mdash; The gap</div>
+              <h2 class="cs-h2" data-cs="wipe">The shape of the problem</h2>
+            </div>
+            <p class="cs-lede" data-cs="rise">What research across 14 recruiters, 8 hiring managers and 5 competitor
+              audits surfaced again and again.</p>
+          </div>
+          <div class="cs-figures">
+            <div class="cs-figure">
+              <div class="cs-figure-num"><span data-count="60">60</span><i>%</i></div>
+              <div class="cs-figure-label">Recruiter time lost</div>
+              <div class="cs-figure-note">Hours spent on coordination, chasing feedback and manual CV triage instead of talking to people.</div>
+            </div>
+            <div class="cs-figure">
+              <div class="cs-figure-num"><span data-count="5">5</span><i> tools</i></div>
+              <div class="cs-figure-label">Daily tool switching</div>
+              <div class="cs-figure-note">ATS, inbox, calendar, spreadsheet and chat — none of them aware of each other.</div>
+            </div>
+            <div class="cs-figure">
+              <div class="cs-figure-num"><span data-count="3">3</span><i>x</i></div>
+              <div class="cs-figure-label">Longer time to hire</div>
+              <div class="cs-figure-note">Against the industry benchmark, with the delay concentrated in screening and scheduling.</div>
+            </div>
+            <div class="cs-figure">
+              <div class="cs-figure-num"><span data-count="22">22</span><i>%</i></div>
+              <div class="cs-figure-label">Candidate drop-off</div>
+              <div class="cs-figure-note">Candidates leaving the process while waiting for a reply that never came.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ before / after ===== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-light cs-section">
+        <div class="container">
+          <div class="cs-head">
+            <div>
+              <div class="cs-eyebrow" data-cs="fade">02 &mdash; The shift</div>
+              <h2 class="cs-h2" data-cs="wipe">The same recruiter workflow,<br />reimagined for 2026</h2>
+            </div>
+            <p class="cs-lede" data-cs="rise">Nothing was added for its own sake. Each step below is an existing habit,
+              with the mechanical half handed to the system.</p>
+          </div>
+          <div class="cs-compare-row" data-cs="rise">
+            <div class="cs-compare-stage">Reviewing applicants</div>
+            <div class="cs-side cs-before">
+              <div class="cs-side-head">Before</div>
+              Opening 200+ CVs one by one, manually tagging who is worth a second look, then losing that context by the next morning.
+            </div>
+            <div class="cs-side cs-after">
+              <div class="cs-side-head">With JobnIQ</div>
+              Every applicant is scored against the role’s real requirements on arrival, with the reasoning shown so a recruiter can overrule it.
+            </div>
+          </div>
+          <div class="cs-compare-row" data-cs="rise">
+            <div class="cs-compare-stage">Scheduling interviews</div>
+            <div class="cs-side cs-before">
+              <div class="cs-side-head">Before</div>
+              Four emails, two calendars, one reschedule. Timezones slip and the candidate waits days for a confirmed slot.
+            </div>
+            <div class="cs-side cs-after">
+              <div class="cs-side-head">With JobnIQ</div>
+              Olivia proposes slots that already fit both calendars, confirms in one click and rebooks itself when something moves.
+            </div>
+          </div>
+          <div class="cs-compare-row" data-cs="rise">
+            <div class="cs-compare-stage">Tracking the pipeline</div>
+            <div class="cs-side cs-before">
+              <div class="cs-side-head">Before</div>
+              A spreadsheet per role, a status column nobody trusts, and a weekly meeting to work out what the real state is.
+            </div>
+            <div class="cs-side cs-after">
+              <div class="cs-side-head">With JobnIQ</div>
+              One five-stage pipeline every stakeholder reads the same way, with stalled candidates surfaced before they go cold.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ pinned feature ===== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-tinted cs-section cs-has-sticky">
+        <div class="container">
+          <div class="cs-head">
+            <div>
+              <div class="cs-eyebrow" data-cs="fade">03 &mdash; The solution</div>
+              <h2 class="cs-h2" data-cs="wipe">AI handles the mechanics.<br />Recruiters handle the meaning.</h2>
+            </div>
+            <p class="cs-lede" data-cs="rise">Every automated decision is visible, attributable and reversible — the
+              system proposes, the recruiter decides.</p>
+          </div>
+          <div class="cs-pin">
+            <div class="cs-pin-media">
+              <div class="cs-shot"><img src="./assets/images/jobniq-pipeline-board.jpg" alt="JobnIQ pipeline board — five stages, every candidate scored" /></div>
+              <div class="cs-caption">The pipeline view — one role, five stages, every candidate scored and sourced.</div>
+            </div>
+            <div class="cs-pin-list">
+              <div class="cs-pin-item">
+                <div class="cs-pin-index">01</div>
+                <h3>AI job creation</h3>
+                <p>Draft a role in minutes: description, required skills, interview structure and screening questions, all editable before anything goes live.</p>
+              </div>
+              <div class="cs-pin-item">
+                <div class="cs-pin-index">02</div>
+                <h3>Smart matching</h3>
+                <p>Candidates scored against the requirements that actually matter, with the reasoning shown next to the score so it can be challenged.</p>
+              </div>
+              <div class="cs-pin-item">
+                <div class="cs-pin-index">03</div>
+                <h3>Five-stage pipeline</h3>
+                <p>Applied, screened, shortlisted, interviewed, offer. One shared state, no parallel spreadsheets, no status column nobody trusts.</p>
+              </div>
+              <div class="cs-pin-item">
+                <div class="cs-pin-index">04</div>
+                <h3>Olivia AI interviewer</h3>
+                <p>Runs structured first-round screens, writes the summary and flags exactly what a human should look at next.</p>
+              </div>
+              <div class="cs-pin-item">
+                <div class="cs-pin-index">05</div>
+                <h3>Decision trail</h3>
+                <p>Every automated action is logged with its reasoning, so a rejected candidate can always be traced back to a decision someone can defend.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== rail ===== -->
+    <section class="cs-page cs-rail-section" data-rail>
+      <div class="cs-panel cs-dark cs-rail-sticky">
+        <div class="container">
+          <div class="cs-head">
+            <div>
+              <div class="cs-eyebrow">04 &mdash; Walkthrough</div>
+              <h2 class="cs-h2">Five screens,<br />one continuous hire.</h2>
+            </div>
+            <div class="cs-rail-hint">Keep scrolling</div>
+          </div>
+        </div>
+        <div class="cs-rail-wrap">
+          <div class="cs-rail">
+              <div class="cs-rail-item">
+                <div class="cs-shot"><img src="./assets/images/jobniq-job-create.jpg" alt="Create job wizard" /></div>
+                <div class="cs-rail-label"><b>01</b> Job creation &mdash; role drafted from a short brief</div>
+              </div>
+              <div class="cs-rail-item">
+                <div class="cs-shot is-fit"><img src="./assets/images/jobniq-candidate-resume.jpg" alt="R&eacute;sum&eacute; upload and parsing" /></div>
+                <div class="cs-rail-label"><b>02</b> R&eacute;sum&eacute; upload &mdash; the profile fills itself from a parsed CV</div>
+              </div>
+              <div class="cs-rail-item">
+                <div class="cs-shot"><img src="./assets/images/jobniq-candidate-dashboard.jpg" alt="Candidate dashboard" /></div>
+                <div class="cs-rail-label"><b>03</b> Candidate view &mdash; matches, applications and next steps</div>
+              </div>
+              <div class="cs-rail-item">
+                <div class="cs-shot"><img src="./assets/images/jobniq-candidate-assessment.jpg" alt="Assessment scoring" /></div>
+                <div class="cs-rail-label"><b>04</b> Assessments &mdash; auto-tested, then human-reviewed</div>
+              </div>
+              <div class="cs-rail-item">
+                <div class="cs-shot"><img src="./assets/images/jobniq-offer-review.jpg" alt="Offer letter review" /></div>
+                <div class="cs-rail-label"><b>05</b> Offer &mdash; reviewed and signed in-product</div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== quote ===== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-dark cs-quote">
+        <div class="container">
+          <figure>
+            <span class="cs-quote-mark" aria-hidden="true">&ldquo;</span>
+            <blockquote data-cs="rise">I stopped reading CVs at midnight. That is the <em>whole review</em> in one sentence.</blockquote>
+            <figcaption data-cs="fade">Beta recruiter &middot; week three</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================== process ===== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-light cs-section cs-has-sticky">
+        <div class="container">
+          <div class="cs-phase">
+            <div class="cs-phase-label">
+              <div class="cs-eyebrow">05 &mdash; Process</div>
+              <h2 class="cs-h2">From flows to a system that scales</h2>
+              <p class="cs-lede">Six months, six phases. Each one closed a question the one before it opened.</p>
+            </div>
+            <div class="cs-track">
+            <div class="cs-track-row" data-cs="rise">
+              <div class="cs-track-num">01</div>
+              <div>
+                <h3>Discovery &amp; interviews</h3>
+                <p>Fourteen recruiters, eight hiring managers and an audit of five competing tools. The brief changed twice before a single screen was drawn.</p>
+                <div class="cs-track-tags"><span class="cs-tag">Interviews</span><span class="cs-tag">Competitor audit</span><span class="cs-tag">Synthesis</span></div>
+              </div>
+            </div>
+            <div class="cs-track-row" data-cs="rise">
+              <div class="cs-track-num">02</div>
+              <div>
+                <h3>Journey mapping</h3>
+                <p>Both sides of the hire mapped end to end, which is where the real cost showed up: not in any one step, but in the handoffs between them.</p>
+                <div class="cs-track-tags"><span class="cs-tag">Service map</span><span class="cs-tag">Pain points</span><span class="cs-tag">Opportunity sizing</span></div>
+              </div>
+            </div>
+            <div class="cs-track-row" data-cs="rise">
+              <div class="cs-track-num">03</div>
+              <div>
+                <h3>Information architecture</h3>
+                <p>One pipeline model every role could share, so a recruiter, a manager and a candidate would all read the same state the same way.</p>
+                <div class="cs-track-tags"><span class="cs-tag">Object model</span><span class="cs-tag">Naming</span><span class="cs-tag">States</span></div>
+              </div>
+            </div>
+            <div class="cs-track-row" data-cs="rise">
+              <div class="cs-track-num">04</div>
+              <div>
+                <h3>Low-fidelity flows</h3>
+                <p>Fast greyscale passes over the riskiest flows — scoring, scheduling and pipeline state — tested before any visual design existed.</p>
+                <div class="cs-track-tags"><span class="cs-tag">Wireframes</span><span class="cs-tag">Flow testing</span><span class="cs-tag">Edge cases</span></div>
+              </div>
+            </div>
+            <div class="cs-track-row" data-cs="rise">
+              <div class="cs-track-num">05</div>
+              <div>
+                <h3>Design system</h3>
+                <p>Tokens, components and patterns so four engineers could build without re-deciding the basics every sprint.</p>
+                <div class="cs-track-tags"><span class="cs-tag">Tokens</span><span class="cs-tag">Components</span><span class="cs-tag">Documentation</span></div>
+              </div>
+            </div>
+            <div class="cs-track-row" data-cs="rise">
+              <div class="cs-track-num">06</div>
+              <div>
+                <h3>Build, beta &amp; iterate</h3>
+                <p>Paired with engineering through build, ran the closed beta, then fed every finding back into the system rather than patching screens.</p>
+                <div class="cs-track-tags"><span class="cs-tag">QA</span><span class="cs-tag">Closed beta</span><span class="cs-tag">Iteration</span></div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= design system ===== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-dark cs-section">
+        <div class="container">
+          <div class="cs-head">
+            <div>
+              <div class="cs-eyebrow" data-cs="fade">06 &mdash; Design system</div>
+              <h2 class="cs-h2" data-cs="wipe">Ten sections.<br />Zero bespoke screens.</h2>
+            </div>
+            <p class="cs-lede" data-cs="rise">Tokens first, components second, patterns third &mdash; written down once
+              so four engineers could build without re-deciding the basics every sprint. Every screen in the product
+              resolves back to this file.</p>
+          </div>
+
+          <div class="cs-ds-stats" data-cs="rise">
+            <div class="cs-ds-stat"><b>27</b><span>Colour tokens, light&nbsp;+&nbsp;dark</span></div>
+            <div class="cs-ds-stat"><b>11</b><span>Type steps, one family</span></div>
+            <div class="cs-ds-stat"><b>12</b><span>Spacing values, 8-based</span></div>
+            <div class="cs-ds-stat"><b>9</b><span>Radii, nothing between</span></div>
+            <div class="cs-ds-stat"><b>3</b><span>Elevation tiers</span></div>
+            <div class="cs-ds-stat"><b>6</b><span>Page patterns</span></div>
+          </div>
+
+          <!-- The system is documented as a light Figma board, so the page
+               embeds it as one rather than restyling it. -->
+          <div class="cs-ds-board" data-cs="fade">
+
+            <div class="cs-ds-board-head">
+              <div>
+                <h4>JobnIQ &mdash; design system</h4>
+                <p>Bound variables, light and dark. Every fill in the product binds to one of these tokens &mdash;
+                  never a raw hex.</p>
+              </div>
+              <span class="cs-ds-chip">Foundations &middot; Components &middot; Patterns</span>
+            </div>
+
+            <!-- The four product rules the system exists to enforce. -->
+            <div class="cs-ds-card">
+              <header>
+                <div class="cs-ds-kicker">Principles</div>
+                <h5>What the system is for</h5>
+                <p>Four product rules. Every token, component and pattern below exists to make one of them cheap to
+                  honour and expensive to break.</p>
+              </header>
+              <div class="cs-ds-specs" style="margin-top: 0;">
+                <div class="cs-ds-spec"><b>Show the reasoning</b><span>Every score explains itself before it asks to be trusted.</span></div>
+                <div class="cs-ds-spec"><b>Nothing is final</b><span>Any automated action can be reviewed and undone.</span></div>
+                <div class="cs-ds-spec"><b>One shared state</b><span>Recruiter and candidate read the same status the same way.</span></div>
+                <div class="cs-ds-spec"><b>No silent moves</b><span>Nothing changes without telling the candidate.</span></div>
+              </div>
+            </div>
+
+            <!-- ------------------------------------------------ 01 colour -->
+            <div class="cs-ds-card">
+              <header>
+                <div class="cs-ds-kicker">Foundations &middot; 01</div>
+                <h5>Colour</h5>
+                <p>27 semantic tokens in five groups. Brand lime is spent sparingly &mdash; primary CTAs, active nav and
+                  progress only. Status colours are locked to meaning, so amber always reads pending and never reads
+                  brand.</p>
+              </header>
+
+              <div class="cs-ds-group">
+                <div class="cs-ds-group-head">
+                  <b>Brand</b>
+                  <span>Softbuilders lime. One signature colour, four steps.</span>
+                </div>
+                <div class="cs-ds-swatches">
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #639C42;"></i>
+                    <div><b>brand/primary</b><em><span class="cs-ds-hex">L #639C42</span><span class="cs-ds-hex is-dark">D #8FCF3E</span></em><small>CTAs, active nav, progress</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #4E7C34;"></i>
+                    <div><b>brand/primary-dk</b><em><span class="cs-ds-hex">L #4E7C34</span><span class="cs-ds-hex is-dark">D #4E7C34</span></em><small>Eyebrow labels, brand text on soft</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #46702E;"></i>
+                    <div><b>brand/primary-dk 2</b><em><span class="cs-ds-hex">L #46702E</span><span class="cs-ds-hex is-dark">D #46702E</span></em><small>Emphasis buttons, brand ink</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #E8F1DF;"></i>
+                    <div><b>brand/primary-soft</b><em><span class="cs-ds-hex">L #E8F1DF</span><span class="cs-ds-hex is-dark">D #1D2A15</span></em><small>Highlight surfaces, tagging fills</small></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-ds-group">
+                <div class="cs-ds-group-head">
+                  <b>Canvas &middot; surface</b>
+                  <span>Backgrounds and surfaces. Sidebar and content shell share tokens.</span>
+                </div>
+                <div class="cs-ds-swatches">
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #F4F5F6;"></i>
+                    <div><b>canvas/bg</b><em><span class="cs-ds-hex">L #F4F5F6</span><span class="cs-ds-hex is-dark">D #0A0D12</span></em><small>Page background, inner card fills</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #FFFFFF;"></i>
+                    <div><b>canvas/surface</b><em><span class="cs-ds-hex">L #FFFFFF</span><span class="cs-ds-hex is-dark">D #12161C</span></em><small>Cards, panels, modals</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #F6F6F6;"></i>
+                    <div><b>canvas/soft</b><em><span class="cs-ds-hex">L #F6F6F6</span><span class="cs-ds-hex is-dark">D #171B22</span></em><small>Ghost buttons, subtle chips</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #FFFFFF;"></i>
+                    <div><b>canvas/sidebar</b><em><span class="cs-ds-hex">L #FFFFFF</span><span class="cs-ds-hex is-dark">D #0F1319</span></em><small>Sidebar fill</small></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-ds-group">
+                <div class="cs-ds-group-head">
+                  <b>Ink &middot; text</b>
+                  <span>900 headings, 700 body, 500 secondary, 400 muted, 300 disabled.</span>
+                </div>
+                <div class="cs-ds-swatches">
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #0B0F14;"></i>
+                    <div><b>ink/900</b><em><span class="cs-ds-hex">L #0B0F14</span><span class="cs-ds-hex is-dark">D #F5F7FA</span></em><small>Headings, primary text</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #1F2937;"></i>
+                    <div><b>ink/700</b><em><span class="cs-ds-hex">L #1F2937</span><span class="cs-ds-hex is-dark">D #C7CDD6</span></em><small>Body text, icons</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #4B5563;"></i>
+                    <div><b>ink/500</b><em><span class="cs-ds-hex">L #4B5563</span><span class="cs-ds-hex is-dark">D #8A93A0</span></em><small>Secondary text, labels</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #6B7280;"></i>
+                    <div><b>ink/400</b><em><span class="cs-ds-hex">L #6B7280</span><span class="cs-ds-hex is-dark">D #6A7280</span></em><small>Muted text, placeholders</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #9CA3AF;"></i>
+                    <div><b>ink/300</b><em><span class="cs-ds-hex">L #9CA3AF</span><span class="cs-ds-hex is-dark">D #4B525C</span></em><small>Disabled text</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #FFFFFF;"></i>
+                    <div><b>ink/inverse</b><em><span class="cs-ds-hex">L #FFFFFF</span><span class="cs-ds-hex is-dark">D #0B0F14</span></em><small>Text on brand fills</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #111418;"></i>
+                    <div><b>ink/black</b><em><span class="cs-ds-hex">L #111418</span><span class="cs-ds-hex is-dark">D #111418</span></em><small>Dark tab pills, chips</small></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-ds-group">
+                <div class="cs-ds-group-head">
+                  <b>Line &middot; border</b>
+                  <span>Two levels only. Soft for internal dividers, default for outlines and inputs.</span>
+                </div>
+                <div class="cs-ds-swatches">
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #EEF0F2;"></i>
+                    <div><b>line/soft</b><em><span class="cs-ds-hex">L #EEF0F2</span><span class="cs-ds-hex is-dark">D #1E242D</span></em><small>Internal dividers, card outlines</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #E5E7EB;"></i>
+                    <div><b>line/default</b><em><span class="cs-ds-hex">L #E5E7EB</span><span class="cs-ds-hex is-dark">D #2A3140</span></em><small>Input borders, buttons</small></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-ds-group">
+                <div class="cs-ds-group-head">
+                  <b>Accent &middot; semantic</b>
+                  <span>Reserved for status. Each accent carries a soft companion for pill backgrounds.</span>
+                </div>
+                <div class="cs-ds-swatches">
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #10B981;"></i>
+                    <div><b>accent/emerald</b><em><span class="cs-ds-hex">L #10B981</span><span class="cs-ds-hex is-dark">D #2FCC97</span></em><small>Success indicators</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #D6F5E7;"></i>
+                    <div><b>accent/emerald-soft</b><em><span class="cs-ds-hex">L #D6F5E7</span><span class="cs-ds-hex is-dark">D #0B3B27</span></em><small>Success pill fills</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #F59E0B;"></i>
+                    <div><b>accent/amber</b><em><span class="cs-ds-hex">L #F59E0B</span><span class="cs-ds-hex is-dark">D #FFB53A</span></em><small>Pending, warnings</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #FEF3C7;"></i>
+                    <div><b>accent/amber-soft</b><em><span class="cs-ds-hex">L #FEF3C7</span><span class="cs-ds-hex is-dark">D #3B2A08</span></em><small>Pending / warning pill fills</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #F43F5E;"></i>
+                    <div><b>accent/rose</b><em><span class="cs-ds-hex">L #F43F5E</span><span class="cs-ds-hex is-dark">D #FF6478</span></em><small>Errors, destructive, urgent</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #FFE4E9;"></i>
+                    <div><b>accent/rose-soft</b><em><span class="cs-ds-hex">L #FFE4E9</span><span class="cs-ds-hex is-dark">D #3A1220</span></em><small>Error / urgent pill fills</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #3B82F6;"></i>
+                    <div><b>accent/blue</b><em><span class="cs-ds-hex">L #3B82F6</span><span class="cs-ds-hex is-dark">D #5B9BFF</span></em><small>Info, inline links</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #E6F0FE;"></i>
+                    <div><b>accent/blue-soft</b><em><span class="cs-ds-hex">L #E6F0FE</span><span class="cs-ds-hex is-dark">D #0E223F</span></em><small>Info pill fills</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #6D5BFF;"></i>
+                    <div><b>accent/violet</b><em><span class="cs-ds-hex">L #6D5BFF</span><span class="cs-ds-hex is-dark">D #8A7BFF</span></em><small>Profile chips, sender avatars</small></div>
+                  </div>
+                  <div class="cs-ds-sw">
+                    <i style="background-color: #EFECFF;"></i>
+                    <div><b>accent/violet-soft</b><em><span class="cs-ds-hex">L #EFECFF</span><span class="cs-ds-hex is-dark">D #22194A</span></em><small>Feature callouts</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- -------------------------------------------- 02 typography -->
+            <div class="cs-ds-split cs-ds-split-wide">
+              <div class="cs-ds-card">
+                <header>
+                  <div class="cs-ds-kicker">Foundations &middot; 02</div>
+                  <h5>Families</h5>
+                  <p>Inter is the sole UI family &mdash; Bold for headings and micro labels, Medium for body, Regular
+                    held back for legal copy. Script faces appear only inside signature rendering, never in UI.</p>
+                </header>
+                <div class="cs-ds-sub">Primary &middot; Inter</div>
+                <div class="cs-ds-weights">
+                  <div class="cs-ds-weight"><b style="font-weight: 400;">Aa</b><span>Regular 400</span></div>
+                  <div class="cs-ds-weight"><b style="font-weight: 500;">Aa</b><span>Medium 500</span></div>
+                  <div class="cs-ds-weight"><b style="font-weight: 600;">Aa</b><span>Semi Bold 600</span></div>
+                  <div class="cs-ds-weight"><b style="font-weight: 700;">Aa</b><span>Bold 700</span></div>
+                </div>
+                <div class="cs-ds-sub" style="margin-top: 24px;">Signature &middot; Great Vibes</div>
+                <div class="cs-ds-sig-row">
+                  <div class="cs-ds-sig-card">
+                    <div class="cs-ds-sig">Muhammad Tabish</div>
+                    <span>Typed signature preview</span>
+                  </div>
+                  <div class="cs-ds-sig-card">
+                    <div class="cs-ds-sig">Hassan Bilal</div>
+                    <span>Typed signature preview</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-ds-card">
+                <header>
+                  <div class="cs-ds-kicker">Foundations &middot; 02</div>
+                  <h5>Type scale</h5>
+                  <p>Eleven steps, each with one job. If a new screen needs a twelfth, the screen is wrong.</p>
+                </header>
+                <div class="cs-ds-scale-row">
+                  <b>Display</b>
+                  <span style="font-size: 27px; font-weight: 700; letter-spacing: -0.02em;">Welcome to Softbuilders.</span>
+                  <small>Success hero, marketing</small>
+                </div>
+                <div class="cs-ds-scale-row">
+                  <b>Page title</b>
+                  <span style="font-size: 20px; font-weight: 700; letter-spacing: -0.01em;">My applications</span>
+                  <small>Page-level H1 in TopBar</small>
+                </div>
+                <div class="cs-ds-scale-row">
+                  <b>Section title</b>
+                  <span style="font-size: 17px; font-weight: 700;">Review offer</span>
+                  <small>Card and panel headings</small>
+                </div>
+                <div class="cs-ds-scale-row">
+                  <b>Subsection</b>
+                  <span style="font-size: 15px; font-weight: 700;">Compensation</span>
+                  <small>Nested section titles</small>
+                </div>
+                <div class="cs-ds-scale-row">
+                  <b>Card title</b>
+                  <span style="font-size: 14px; font-weight: 700;">Softbuilders Software Design</span>
+                  <small>Compact card headings</small>
+                </div>
+                <div class="cs-ds-scale-row">
+                  <b>Body emphasis</b>
+                  <span style="font-size: 13px; font-weight: 600;">UI/UX Designer</span>
+                  <small>Key&ndash;value labels, list titles</small>
+                </div>
+                <div class="cs-ds-scale-row">
+                  <b>Body</b>
+                  <span style="font-size: 13px; font-weight: 500;">Read both pages carefully before continuing.</span>
+                  <small>Default body copy</small>
+                </div>
+                <div class="cs-ds-scale-row">
+                  <b>Body small</b>
+                  <span style="font-size: 12px; font-weight: 500;">Design Manager &middot; Softbuilders</span>
+                  <small>Meta rows, dense lists</small>
+                </div>
+                <div class="cs-ds-scale-row">
+                  <b>Caption</b>
+                  <span style="font-size: 11px; font-weight: 500;">Signature: Elegant &middot; rendered 300 dpi</span>
+                  <small>Footnotes, helper text</small>
+                </div>
+                <div class="cs-ds-scale-row">
+                  <b>Eyebrow</b>
+                  <span class="cs-ds-caps" style="font-size: 10px;">Candidate portal &middot; Offers</span>
+                  <small>Section eyebrows, tags</small>
+                </div>
+                <div class="cs-ds-scale-row">
+                  <b>Micro</b>
+                  <span class="cs-ds-caps" style="font-size: 9px;">Awaiting signature</span>
+                  <small>Status pill text, chip labels</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- --------------------------------- 03 space · shape · depth -->
+            <div class="cs-ds-card">
+              <header>
+                <div class="cs-ds-kicker">Foundations &middot; 03</div>
+                <h5>Space &middot; shape &middot; depth</h5>
+                <p>The bones behind every screen. An 8-based spacing scale with no ad-hoc padding, nine radii and three
+                  shadow tiers &mdash; anything deeper than tier 3 means the pattern is wrong, not the shadow.</p>
+              </header>
+
+              <div class="cs-ds-sub">Spacing scale</div>
+              <div class="cs-ds-space">
+                <span><i style="--w: 4px;"></i>4</span>
+                <span><i style="--w: 6px;"></i>6</span>
+                <span><i style="--w: 8px;"></i>8</span>
+                <span><i style="--w: 10px;"></i>10</span>
+                <span><i style="--w: 12px;"></i>12</span>
+                <span><i style="--w: 16px;"></i>16</span>
+                <span><i style="--w: 20px;"></i>20</span>
+                <span><i style="--w: 24px;"></i>24</span>
+                <span><i style="--w: 32px;"></i>32</span>
+                <span><i style="--w: 40px;"></i>40</span>
+                <span><i style="--w: 48px;"></i>48</span>
+                <span><i style="--w: 56px;"></i>56</span>
+              </div>
+
+              <div class="cs-ds-sub" style="margin-top: 26px;">Radius scale</div>
+              <div class="cs-ds-radii">
+                <div class="cs-ds-radius"><i style="--r: 6px;"></i><b>6</b>Checkbox</div>
+                <div class="cs-ds-radius"><i style="--r: 10px;"></i><b>10</b>Tiny badge</div>
+                <div class="cs-ds-radius"><i style="--r: 12px;"></i><b>12</b>Chip</div>
+                <div class="cs-ds-radius"><i style="--r: 14px;"></i><b>14</b>Nav item</div>
+                <div class="cs-ds-radius"><i style="--r: 16px;"></i><b>16</b>Section</div>
+                <div class="cs-ds-radius"><i style="--r: 20px;"></i><b>20</b>Card</div>
+                <div class="cs-ds-radius"><i style="--r: 24px;"></i><b>24</b>Feature</div>
+                <div class="cs-ds-radius"><i style="--r: 36px;"></i><b>36</b>Content shell</div>
+                <div class="cs-ds-radius"><i style="--r: 999px;"></i><b>999</b>Pill</div>
+              </div>
+
+              <div class="cs-ds-sub" style="margin-top: 26px;">Elevation</div>
+              <div class="cs-ds-elev">
+                <div class="cs-ds-elev-item t1"><i></i><b>01 &middot; Subtle</b><small>0 &middot; 2 &middot; 12 &middot; rgba(0,0,0,0.04)</small></div>
+                <div class="cs-ds-elev-item t2"><i></i><b>02 &middot; Card</b><small>0 &middot; 4 &middot; 20 &middot; rgba(0,0,0,0.05)</small></div>
+                <div class="cs-ds-elev-item t3"><i></i><b>03 &middot; Overlay</b><small>0 &middot; 12 &middot; 40 &middot; rgba(0,0,0,0.12)</small></div>
+              </div>
+
+              <div class="cs-ds-specs">
+                <div class="cs-ds-spec"><b>Iconography</b><span>Feather-style outline, 1.8 stroke, round joins. 14 / 16 / 18 / 20 / 24.</span></div>
+                <div class="cs-ds-spec"><b>Shell</b><span>1920 &times; 1522 root, r26, canvas/bg.</span></div>
+                <div class="cs-ds-spec"><b>Sidebar &middot; content</b><span>110w rail, white. Content 1840 &times; 1382, r36.</span></div>
+                <div class="cs-ds-spec"><b>TopBar</b><span>1776 &times; 44. Crumb left, actions right.</span></div>
+              </div>
+            </div>
+
+            <!-- -------------------------------------------- 04 components -->
+            <div class="cs-ds-card">
+              <header>
+                <div class="cs-ds-kicker">Components &middot; 04&ndash;08</div>
+                <h5>Buttons</h5>
+                <p>Six variants, three sizes, five states plus loading. Every button is a pill, text is Bold and the
+                  icon gap is always 8. Primary lime appears once per view; destructive is limited to irreversible
+                  actions inside a confirmation.</p>
+              </header>
+
+              <div class="cs-ds-sub">Variants</div>
+              <div class="cs-ds-row">
+                <span class="cs-ds-btn is-primary">Sign &amp; submit offer</span>
+                <span class="cs-ds-btn is-primary-dk">Back to portal</span>
+                <span class="cs-ds-btn is-secondary">Download PDF</span>
+                <span class="cs-ds-btn is-ghost">Cancel</span>
+                <span class="cs-ds-btn is-outline">View certificate</span>
+                <span class="cs-ds-btn is-danger">Decline offer</span>
+              </div>
+
+              <div class="cs-ds-sub">States &middot; primary</div>
+              <div class="cs-ds-row" style="gap: 18px;">
+                <div class="cs-ds-state"><span>Default</span><span class="cs-ds-btn is-primary is-sm">Button</span></div>
+                <div class="cs-ds-state"><span>Hover</span><span class="cs-ds-btn on-hover is-sm">Button</span></div>
+                <div class="cs-ds-state"><span>Focus</span><span class="cs-ds-btn on-focus is-sm">Button</span></div>
+                <div class="cs-ds-state"><span>Pressed</span><span class="cs-ds-btn on-press is-sm">Button</span></div>
+                <div class="cs-ds-state"><span>Disabled</span><span class="cs-ds-btn on-disabled is-sm">Button</span></div>
+                <div class="cs-ds-state"><span>Loading</span><span class="cs-ds-btn is-primary is-sm"><i aria-hidden="true"></i> Loading</span></div>
+              </div>
+
+              <div class="cs-ds-sub">Sizes</div>
+              <div class="cs-ds-row" style="gap: 18px;">
+                <div class="cs-ds-state"><span>Compact &middot; 32</span><span class="cs-ds-btn is-primary is-sm">Continue</span></div>
+                <div class="cs-ds-state"><span>Default &middot; 44</span><span class="cs-ds-btn is-primary">Continue</span></div>
+                <div class="cs-ds-state"><span>Large &middot; 48</span><span class="cs-ds-btn is-primary is-lg">Continue</span></div>
+              </div>
+            </div>
+
+            <div class="cs-ds-split">
+              <div class="cs-ds-card">
+                <header>
+                  <div class="cs-ds-kicker">Components &middot; 05</div>
+                  <h5>Forms</h5>
+                  <p>44h pill inputs on canvas/bg with soft borders. Focus binds brand primary; error binds rose plus a
+                    micro label. Checkboxes are 20&times;20 at r6 and fill lime on select.</p>
+                </header>
+                <div class="cs-ds-fields">
+                  <div class="cs-ds-field">
+                    <label>Full name</label>
+                    <span class="cs-ds-input">Muhammad Tabish</span>
+                    <small>As shown on your national ID</small>
+                  </div>
+                  <div class="cs-ds-field">
+                    <label>Email &middot; focus</label>
+                    <span class="cs-ds-input is-focus">tabishkhanji12@gmail.com</span>
+                    <small>Confirmation and offer letter go here.</small>
+                  </div>
+                  <div class="cs-ds-field">
+                    <label>Password &middot; error</label>
+                    <span class="cs-ds-input is-error">pass</span>
+                    <small class="is-error">&#9888; Minimum 12 characters.</small>
+                  </div>
+                </div>
+                <div class="cs-ds-row" style="margin-top: 20px; gap: 18px;">
+                  <span class="cs-ds-check is-on"><i>&#10003;</i> Checked</span>
+                  <span class="cs-ds-check"><i></i> Default</span>
+                  <span class="cs-ds-check is-radio is-on"><i>&bull;</i> Radio</span>
+                  <span class="cs-ds-switch is-on"><i></i> Switch on</span>
+                </div>
+              </div>
+
+              <div class="cs-ds-card">
+                <header>
+                  <div class="cs-ds-kicker">Components &middot; 06&ndash;07</div>
+                  <h5>Navigation &amp; data display</h5>
+                  <p>Status pills take an accent-soft fill with accent-dark text, so colour carries meaning before the
+                    label is read. Avatars run 28 / 36 / 44 / 56 / 72 and use violet for identity &mdash; never brand.</p>
+                </header>
+                <div class="cs-ds-row">
+                  <span class="cs-ds-pill is-emerald">Signed</span>
+                  <span class="cs-ds-pill is-amber">Awaiting signature</span>
+                  <span class="cs-ds-pill is-blue">Interviewing</span>
+                  <span class="cs-ds-pill is-rose">3d left</span>
+                  <span class="cs-ds-pill is-violet">New match</span>
+                  <span class="cs-ds-pill is-dark">94% best fit</span>
+                </div>
+                <div class="cs-ds-avatars" style="margin-top: 18px;">
+                  <span class="cs-ds-avatar" style="width: 28px; height: 28px; font-size: 10px; background-color: #6D5BFF;">MT</span>
+                  <span class="cs-ds-avatar" style="width: 36px; height: 36px; font-size: 12px; background-color: #3B82F6;">HB</span>
+                  <span class="cs-ds-avatar" style="width: 44px; height: 44px; font-size: 14px; background-color: #10B981;">SB</span>
+                  <span class="cs-ds-avatar" style="width: 56px; height: 56px; font-size: 17px; background-color: #F43F5E;">MT</span>
+                </div>
+                <div class="cs-ds-sub" style="margin-top: 22px;">Progress &middot; stepper</div>
+                <div style="font-size: 11.5px; font-weight: 700; display: flex; justify-content: space-between;"><span>Profile completeness</span><span>82%</span></div>
+                <div class="cs-ds-progress"><span style="width: 82%;"></span></div>
+                <div class="cs-ds-step is-done"><i>&#10003;</i> Review offer</div>
+                <div class="cs-ds-step is-now"><i>2</i> Add signature</div>
+                <div class="cs-ds-step"><i>3</i> Confirm &amp; submit</div>
+              </div>
+            </div>
+
+            <div class="cs-ds-card">
+              <header>
+                <div class="cs-ds-kicker">Components &middot; 08</div>
+                <h5>Feedback &amp; overlays</h5>
+                <p>Modals at r24 over ink/900 at 40%, right-slide drawers at 480w, toasts as r16 pills and four
+                  full-page states &mdash; empty, loading, error, success. Every state ships with its own primary
+                  action, so no screen dead-ends.</p>
+              </header>
+              <div class="cs-ds-split-3">
+                <div class="cs-ds-toast">
+                  <i>&#10003;</i>
+                  <div><b>Signature saved</b><span>Ready to submit whenever you are.</span></div>
+                </div>
+                <div class="cs-ds-alert is-amber"><b>Offer expires soon</b>3 days remaining. Sign before 28 Aug 2026 &middot; 23:59 GST.</div>
+                <div class="cs-ds-alert is-rose"><b>Signature mismatch</b>Uploaded image quality too low. Retry with a clearer PNG.</div>
+              </div>
+              <div class="cs-ds-row" style="margin-top: 14px;">
+                <span class="cs-ds-tooltip">Signed 21 Aug 2026 &middot; 15:07 GST</span>
+                <span class="cs-ds-pill is-emerald">Verified</span>
+                <span class="cs-ds-pill is-amber">Signing in progress</span>
+              </div>
+            </div>
+
+            <!-- ---------------------------------------------- 09 patterns -->
+            <div class="cs-ds-card">
+              <header>
+                <div class="cs-ds-kicker">Patterns &middot; 09</div>
+                <h5>Page patterns</h5>
+                <p>Six reusable compositions. Every new screen starts from one of these skeletons &mdash; content
+                  changes, shell dimensions do not.</p>
+              </header>
+              <div class="cs-ds-patterns">
+                <div class="cs-ds-pattern">
+                  <div class="cs-ds-wire">
+                    <div class="rail"><i class="on"></i><i></i><i></i><i></i></div>
+                    <div class="body">
+                      <div class="bar dark"></div>
+                      <div class="box lime" style="flex: 0 0 26px;"></div>
+                      <div class="row"><div class="box"></div><div class="box"></div><div class="box"></div></div>
+                      <div class="box short"></div>
+                    </div>
+                  </div>
+                  <b>Dashboard grid</b>
+                  <small>Hero row, tracker, 3-column widgets, timeline. Candidate home.</small>
+                </div>
+                <div class="cs-ds-pattern">
+                  <div class="cs-ds-wire">
+                    <div class="rail"><i></i><i class="on"></i><i></i><i></i></div>
+                    <div class="body">
+                      <div class="bar dark"></div>
+                      <div class="row"><div class="box"></div><div class="box side"></div></div>
+                    </div>
+                  </div>
+                  <b>Detail &middot; 2-col</b>
+                  <small>Hero card plus 360w right rail. Application detail, job detail.</small>
+                </div>
+                <div class="cs-ds-pattern">
+                  <div class="cs-ds-wire">
+                    <div class="rail"><i></i><i></i><i class="on"></i><i></i></div>
+                    <div class="body">
+                      <div class="bar dark"></div>
+                      <div class="row"><div class="box"></div><div class="box panel lime"></div></div>
+                    </div>
+                  </div>
+                  <b>Signing flow</b>
+                  <small>Doc viewer left, 420w panel right: stepper, legal, CTA.</small>
+                </div>
+                <div class="cs-ds-pattern">
+                  <div class="cs-ds-wire">
+                    <div class="rail"><i></i><i></i><i></i><i class="on"></i></div>
+                    <div class="body">
+                      <div class="bar dark"></div>
+                      <div class="bar half"></div>
+                      <div class="box"></div>
+                      <div class="bar lime"></div>
+                    </div>
+                  </div>
+                  <b>Table page</b>
+                  <small>Filter chips, full table, pagination footer. My applications.</small>
+                </div>
+                <div class="cs-ds-pattern">
+                  <div class="cs-ds-wire">
+                    <div class="rail"><i></i><i class="on"></i><i></i><i></i></div>
+                    <div class="body">
+                      <div class="bar dark"></div>
+                      <div class="row"><div class="box narrow"></div></div>
+                    </div>
+                  </div>
+                  <b>Form page</b>
+                  <small>Centred 720w card with grouped sections. Profile, apply steps.</small>
+                </div>
+                <div class="cs-ds-pattern">
+                  <div class="cs-ds-wire">
+                    <div class="rail"><i class="on"></i><i></i><i></i><i></i></div>
+                    <div class="body">
+                      <div class="bar dark"></div>
+                      <div class="row"><div class="box narrow lime"></div></div>
+                      <div class="bar lime"></div>
+                    </div>
+                  </div>
+                  <b>Empty / success</b>
+                  <small>Centred illustration, title, support line, primary CTA.</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- ------------------------------------- 10 validation / rules -->
+            <div class="cs-ds-card">
+              <header>
+                <div class="cs-ds-kicker">Validation &middot; 10</div>
+                <h5>What to reuse, what not to invent</h5>
+                <p>Eleven shipped screens, each mapped back to a pattern and a component set. The guardrails exist
+                  because this is the list of ways a system quietly stops being one.</p>
+              </header>
+              <div class="cs-ds-split">
+                <div>
+                  <div class="cs-ds-sub">Reuse rules</div>
+                  <div class="cs-ds-rule is-do"><i>&#10003;</i> Bind every fill to a colour variable &mdash; no raw hex outside signature ink.</div>
+                  <div class="cs-ds-rule is-do"><i>&#10003;</i> Start each new screen from a pattern. Change content, not shell dimensions.</div>
+                  <div class="cs-ds-rule is-do"><i>&#10003;</i> Pick a button variant and size from the set. Don't invent shapes or radii.</div>
+                  <div class="cs-ds-rule is-do"><i>&#10003;</i> Status colour is locked: amber pending, emerald success, rose urgent, blue info, violet identity.</div>
+                  <div class="cs-ds-rule is-do"><i>&#10003;</i> TopBar right stays Search &middot; Lang &middot; Notifications &middot; Profile. Users learn the position.</div>
+                  <div class="cs-ds-rule is-do"><i>&#10003;</i> Inter everywhere. Script faces only inside signature PDFs and typed previews.</div>
+                </div>
+                <div>
+                  <div class="cs-ds-sub">Guardrails</div>
+                  <div class="cs-ds-rule is-dont"><i>&times;</i> No second brand colour. Lime is the only signature &mdash; a "secondary brand" is not on-system.</div>
+                  <div class="cs-ds-rule is-dont"><i>&times;</i> No invented radii like r18 or r22. Nine steps is the whole scale.</div>
+                  <div class="cs-ds-rule is-dont"><i>&times;</i> No multi-line, multi-colour CTAs. One label, one optional icon.</div>
+                  <div class="cs-ds-rule is-dont"><i>&times;</i> No gradient or brand-filled sidebar. The rail stays canvas/sidebar.</div>
+                  <div class="cs-ds-rule is-dont"><i>&times;</i> Nothing deeper than tier 3. If more depth is needed, the pattern is wrong.</div>
+                  <div class="cs-ds-rule is-dont"><i>&times;</i> Violet is identity, not accent. Rose is confirmation, not decoration.</div>
+                </div>
+              </div>
+              <div class="cs-ds-coverage">
+                <span class="cs-ds-cov">Dashboard</span>
+                <span class="cs-ds-cov">My applications</span>
+                <span class="cs-ds-cov">Application detail</span>
+                <span class="cs-ds-cov">Interviews</span>
+                <span class="cs-ds-cov">Job details</span>
+                <span class="cs-ds-cov">Apply &middot; steps 1&ndash;4</span>
+                <span class="cs-ds-cov">Apply &middot; done</span>
+                <span class="cs-ds-cov">Sign in / sign up</span>
+                <span class="cs-ds-cov">Offer sign &middot; 1&ndash;8</span>
+                <span class="cs-ds-cov">Offer signed</span>
+                <span class="cs-ds-cov">Certificate</span>
+              </div>
+            </div>
+
+            <div class="cs-ds-foot">
+              <span>JobnIQ design system &middot; 10 sections &middot; light + dark variables</span>
+              <span>Every screen above resolves to a pattern + component set &mdash; nothing bespoke.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================ two-sided ====== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-light cs-section">
+        <div class="container">
+          <div class="cs-head">
+            <div>
+              <div class="cs-eyebrow" data-cs="fade">07 &mdash; Two audiences</div>
+              <h2 class="cs-h2" data-cs="wipe">Hiring is a two-sided product.<br />So is JobnIQ.</h2>
+            </div>
+            <p class="cs-lede" data-cs="rise">The same pipeline, read from both ends. Recruiters see control and
+              context; candidates see where they stand and what happens next.</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-6" data-cs="fade">
+              <div class="cs-shot"><img src="./assets/images/jobniq-candidate-screening.jpg" alt="JobnIQ recruiter view — AI-scored screening answers and interview controls" /></div>
+              <div class="cs-caption">Recruiter — scoring, pipeline and interview control.</div>
+            </div>
+            <div class="col-lg-6" data-cs="fade" data-cs-delay="120">
+              <div class="cs-shot"><img src="./assets/images/jobniq-candidate-applications.jpg" alt="JobnIQ candidate view — my applications" /></div>
+              <div class="cs-caption">Candidate — status, next step and expected timing.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================== results ===== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-results cs-section">
+        <div class="container">
+          <div class="cs-head">
+            <div>
+              <div class="cs-eyebrow" data-cs="fade">08 &mdash; Impact</div>
+              <h2 class="cs-h2" data-cs="wipe">Early beta signals<br />faster, fairer hiring.</h2>
+            </div>
+            <p class="cs-lede" data-cs="rise">Measured across the first cohort of beta teams. Directional rather than
+              final — the sample is small and still growing.</p>
+          </div>
+          <div class="cs-figures">
+            <div class="cs-figure">
+              <div class="cs-figure-num"><span data-count="68">68</span><i>%</i></div>
+              <div class="cs-figure-label">Less triage time</div>
+              <div class="cs-figure-note">Recruiters reached a shortlist faster because scoring arrived with the application.</div>
+            </div>
+            <div class="cs-figure">
+              <div class="cs-figure-num"><span data-count="3">3</span><i>x</i></div>
+              <div class="cs-figure-label">Faster offer turnaround</div>
+              <div class="cs-figure-note">Scheduling stopped being the bottleneck between stages.</div>
+            </div>
+            <div class="cs-figure">
+              <div class="cs-figure-num"><span data-count="92">92</span><i>%</i></div>
+              <div class="cs-figure-label">Recruiter trust in scores</div>
+              <div class="cs-figure-note">Reported confidence once the reasoning behind each score was made visible.</div>
+            </div>
+            <div class="cs-figure">
+              <div class="cs-figure-num"><span data-count="40">40</span><i>%</i></div>
+              <div class="cs-figure-label">Fewer dropped candidates</div>
+              <div class="cs-figure-note">Fewer people left the process while waiting on a response.</div>
+            </div>
+          </div>
+          <div class="cs-shot mt-5" data-cs="fade">
+            <img src="./assets/images/jobniq-offer-sign.jpg" alt="JobnIQ offer signing — candidate signs in-product" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================ learnings ===== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-light cs-section">
+        <div class="container">
+          <div class="cs-head">
+            <div>
+              <div class="cs-eyebrow" data-cs="fade">09 &mdash; Reflection</div>
+              <h2 class="cs-h2" data-cs="wipe">What I’d do differently</h2>
+            </div>
+          </div>
+          <div class="cs-learn-row" data-cs="rise">
+            <div class="cs-learn-num">01</div>
+            <h3>Prototype the AI before the UI</h3>
+            <p>I designed the scoring screens before I knew how the model would behave. Testing the output first would have saved a full redesign of the match panel.</p>
+          </div>
+          <div class="cs-learn-row" data-cs="rise">
+            <div class="cs-learn-num">02</div>
+            <h3>Involve hiring managers earlier</h3>
+            <p>They were brought in after the recruiter flows were settled, and their approval step had to be retrofitted into a pipeline that had not planned for it.</p>
+          </div>
+          <div class="cs-learn-row" data-cs="rise">
+            <div class="cs-learn-num">03</div>
+            <h3>Design system first</h3>
+            <p>Components were extracted after three screens were already built, which cost a reconciliation pass that a token set up front would have avoided.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== cta ====== -->
+    <section class="cs-page">
+      <div class="cs-panel cs-cta">
+        <div class="container">
+          <h2 data-cs="wipe">Want the full walkthrough?</h2>
+          <p data-cs="rise">Happy to share the Figma files, the prototypes and the thinking behind each screen.</p>
+          <div class="cs-cta-actions" data-cs="rise" data-cs-delay="120">
+            <a href="mailto:tabishkhanji12@gmail.com" class="cs-btn cs-btn-primary">tabishkhanji12@gmail.com</a>
+            <a href="https://www.linkedin.com/in/muhammad-t-913200224/" target="_blank" rel="noopener" class="cs-btn cs-btn-ghost">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================ next case ===== -->
+    <section class="cs-page">
+      <div class="container">
+        <a href="./mai-hrms" class="cs-next">
+          <div>
+            <div class="cs-next-label">Next case study</div>
+            <div class="cs-next-title">Mai HRMS</div>
+          </div>
+          <svg class="cs-next-arrow" width="46" height="18" viewBox="0 0 46 18" fill="none" aria-hidden="true">
+            <path d="M0 9H41" stroke="currentColor" stroke-width="2"/>
+            <path d="M33 1c0 4.4 3.6 8 8 8-4.4 0-8 3.6-8 8" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="problem-marquee">
+        <div class="marque">
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Consistency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Problem-Solving</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Transparency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Trustworthiness</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Creativity</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> User-Centric</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Consistency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Problem-Solving</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Transparency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Trustworthiness</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Creativity</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Consistency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Problem-Solving</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Transparency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Trustworthiness</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Creativity</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Consistency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Problem-Solving</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Transparency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Trustworthiness</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Creativity</span>
+        </div>
+        <div class="marque">
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Consistency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Problem-Solving</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Transparency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Trustworthiness</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Creativity</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> User-Centric</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Consistency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Problem-Solving</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Transparency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Trustworthiness</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Creativity</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Consistency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Problem-Solving</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Transparency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Trustworthiness</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Creativity</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Consistency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Problem-Solving</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Transparency</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Trustworthiness</span>
+          <span><img src="./assets/images/star.svg" width="31" alt="star"> Creativity</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <a href="./"><img src="./assets/images/footer-logo.svg" width="150" alt="footer-logo"></a>
+          </div>
+          <div class="col-lg-2 mt-lg-0 mt-5 footer-links">
+            <div class="title">Quick Links</div>
+            <div class="links">
+              <a href="./">Home</a>
+              <a href="./projects">Projects</a>
+              <a href="./case-studies">Case Studies</a>
+              <a href="./assets/images/muhammad-tabish-resume.pdf" download>Resume</a>
+              <a href="./contact">Contact</a>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-lg-0 mt-5">
+            <div class="lets-connect-card">
+              <span class="circles"></span>
+              <div>
+                <img src="./assets/images/lets-connect-img.png" width="70" alt="lets-connect" />
+                <div class="title">Let’s Connect with me</div>
+                <div class="desc">Great collaborations start with a simple hello. Let’s connect and create something meaningful together.</div>
+                <a href="./contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="hr"></div>
+          </div>
+          <div class="col-md-8 text-md-start text-center">
+            <div class="copy-txt">© 2026 tabish.design All Rights Reserved</div>
+          </div>
+          <div class="col-md-4 text-md-end text-center mt-md-0 mt-4">
+            <a href="#" class="back-to-top">Back to the top <img src="./assets/images/back-to-top.svg" width="40" alt="back-to-top"></a>
+          </div>
+          <div class="col-12 mt-4">
+            <img src="./assets/images/tabish-footer.png" class="w-100" alt="tabish-footer" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./assets/js/case-study.js"></script>
+  <script>
+
+    let lastScrollTop = 0;
+    const header = document.querySelector("header.header-light");
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScroll > lastScrollTop && currentScroll > 100) {
+        header.classList.add("hidden");
+      } else if (currentScroll < lastScrollTop) {
+        header.classList.remove("hidden");
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const preloader = document.getElementById("preloader");
+      const progressBar = document.getElementById("progressBar");
+      const loadPercent = document.getElementById("loadPercent");
+      let progress = 0;
+
+      const interval = setInterval(() => {
+        progress += Math.floor(Math.random() * 8) + 3;
+        if (progress > 100) progress = 100;
+
+        progressBar.style.width = progress + "%";
+        loadPercent.textContent = progress + "%";
+
+        if (progress === 100) {
+          clearInterval(interval);
+          setTimeout(() => {
+            preloader.classList.add("hidden");
+            document.body.style.overflow = "auto";
+
+            setTimeout(() => {
+              preloader.remove();
+              const currentScript = document.currentScript;
+              if (currentScript) currentScript.remove();
+            }, 300);
+          }, 300);
+        }
+      }, 80);
+
+      document.body.style.overflow = "hidden";
+    });
+    
+    document.querySelectorAll(".open-sidebar").forEach((element) => {
+      element.addEventListener("click", function () {
+        document.body.classList.add("sidebar-open");
+        document.body.style.overflow = "hidden";
+      });
+    });
+    
+    document.querySelectorAll(".close-sidebar").forEach((element) => {
+      element.addEventListener("click", function () {
+        document.body.classList.remove("sidebar-open");
+        document.body.style.overflow = "auto";
+      });
+    });
+
+    document.querySelector('.back-to-top').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+
+</html>

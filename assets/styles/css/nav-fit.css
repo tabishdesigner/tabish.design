@@ -1,0 +1,23 @@
+/* ==========================================================================
+   nav-fit.css — keeps the header menu clear of the actions button.
+   --------------------------------------------------------------------------
+   Purely additive; style.css is not modified.
+
+   The header puts the menu pill in a centred column with the logo to its left
+   and "Available for work" / "Contact" to its right. Between 992px and 1199px
+   Bootstrap's container is 960px wide, and there the pill has only 31px of
+   clearance to the actions with three items in it. Adding "Case Studies"
+   widens the pill by 74px, which overruns that button by 5px.
+
+   Tightening the pill's own gap and padding in that band — and only there —
+   gives back the 72px needed, restoring the original clearance exactly. Every
+   other width keeps style.css's spacing untouched: at 1200px and above the
+   container grows to 1140px and the four-item pill already has 78px to spare.
+   ========================================================================== */
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  header .menu {
+    gap: 24px;
+    padding: 15px 18px;
+  }
+}

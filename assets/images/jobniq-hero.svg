@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Hero product shot placeholder">
+  <rect width="1600" height="900" fill="#1A0600"/>
+  <rect x="50" y="50" width="1500" height="68" rx="20" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+  <circle cx="84" cy="84" r="12" fill="#FF6333"/>
+  <rect x="118" y="75.84" width="255" height="16" rx="8" fill="rgba(255,255,255,0.14)"/>
+  <rect x="50" y="153" width="255" height="697" rx="20" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+  <rect x="340" y="153" width="1210" height="697" rx="20" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+  <rect x="81" y="237" width="194" height="38" rx="19" fill="#FF6333" opacity="0.9"/>
+  <rect x="81" y="328" width="153" height="38" rx="19" fill="rgba(255,255,255,0.14)" opacity="1"/>
+  <rect x="81" y="419" width="153" height="38" rx="19" fill="rgba(255,255,255,0.14)" opacity="1"/>
+  <rect x="81" y="510" width="153" height="38" rx="19" fill="rgba(255,255,255,0.14)" opacity="1"/>
+  <rect x="81" y="601" width="153" height="38" rx="19" fill="rgba(255,255,255,0.14)" opacity="1"/>
+  <rect x="388" y="223" width="1041" height="52" rx="26" fill="rgba(255,255,255,0.14)"/>
+  <rect x="388" y="362" width="895" height="52" rx="26" fill="rgba(255,255,255,0.14)"/>
+  <rect x="388" y="501" width="750" height="52" rx="26" fill="rgba(255,255,255,0.14)"/>
+  <rect x="388" y="640" width="605" height="52" rx="26" fill="rgba(255,255,255,0.14)"/>
+  <text x="800" y="456.8" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="68" font-weight="700" fill="rgba(255,255,255,0.92)">Hero product shot</text>
+  <text x="800" y="514.6" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="31" fill="rgba(255,255,255,0.45)">16:9 — dashboard + mobile mockup</text>
+</svg>

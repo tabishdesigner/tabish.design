@@ -1,0 +1,146 @@
+/* ==========================================================================
+   motion.css — entrance and ambient motion for the homepage.
+   --------------------------------------------------------------------------
+   Purely additive. Nothing in style.css is overridden and no colour, size,
+   spacing or layout value is changed. Every rule is scoped to
+   html.motion-ready, which motion.js adds only once it has decided motion is
+   wanted, so without the script the page is exactly as it was.
+
+   Two guarantees this file is built around:
+
+   1. Every animation RESOLVES TO THE DESIGNED VALUE — opacity 1, no offset,
+      scale 1 — and motion.js then strips the classes off the element, so a
+      settled page carries no trace of this stylesheet.
+
+   2. Entrance motion uses `translate` / `scale` / `clip-path`, never
+      `transform`. They are separate properties, so the existing :hover
+      `transform: scale(1.05)` on project thumbnails keeps working untouched.
+   ========================================================================== */
+
+/* -------------------------------------------------------------- rise + fade */
+/* The transition lives on the .mo-in state only, so the hidden state applies
+   instantly on the first frame instead of animating into hiding. */
+
+/* The 14px offset is deliberately less than half the smallest gap between any
+   two elements that use it, so even mid-animation a riser cannot reach its
+   neighbour. Anything stacked flush against its neighbour uses .mo-fade
+   instead, which does not move at all. */
+
+html.motion-ready .mo-rise {
+  opacity: 0;
+  translate: 0 14px;
+}
+
+html.motion-ready .mo-rise.mo-in {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1) var(--mo-delay, 0ms),
+    translate 0.85s cubic-bezier(0.22, 1, 0.36, 1) var(--mo-delay, 0ms);
+}
+
+/* ------------------------------------------------------------------- fade */
+/* For elements that sit flush against their neighbours — the service rows
+   share a border, with no gap at all — so that no displacement is possible. */
+
+html.motion-ready .mo-fade {
+  opacity: 0;
+}
+
+html.motion-ready .mo-fade.mo-in {
+  opacity: 1;
+  transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1) var(--mo-delay, 0ms);
+}
+
+/* ------------------------------------------------------------------- wipe */
+/* For headings: the line draws itself in from the top with no movement at
+   all, so it cannot crowd whatever sits next to it. */
+
+html.motion-ready .mo-wipe {
+  opacity: 0;
+  clip-path: inset(0 0 100% 0);
+}
+
+html.motion-ready .mo-wipe.mo-in {
+  opacity: 1;
+  clip-path: inset(0 0 0 0);
+  transition:
+    opacity 0.5s linear var(--mo-delay, 0ms),
+    clip-path 1s cubic-bezier(0.22, 1, 0.36, 1) var(--mo-delay, 0ms);
+}
+
+/* ------------------------------------------------------------ soft scale-in */
+/* Used on the circular portrait. No transform, so nothing it is nested in is
+   affected and no layout box changes size. */
+
+html.motion-ready .mo-pop {
+  opacity: 0;
+  scale: 0.92;
+}
+
+html.motion-ready .mo-pop.mo-in {
+  opacity: 1;
+  scale: 1;
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--mo-delay, 0ms),
+    scale 0.9s cubic-bezier(0.22, 1, 0.36, 1) var(--mo-delay, 0ms);
+}
+
+/* Note: project thumbnails deliberately get no scale animation. Easing an
+   image back from an overscale leaves it resampled from a cached raster, and
+   a handful of pixels on the photograph then differ from the untouched page.
+   The cards carry their entrance as a whole instead, and the existing :hover
+   zoom on the thumbnail is left to do its own job. */
+
+/* ---------------------------------------------------------------- hinting */
+/* Only promoted while something is actually animating; motion.js removes the
+   class the moment the element settles, because text on its own GPU layer is
+   antialiased differently from text that is not. */
+
+html.motion-ready .mo-busy {
+  will-change: opacity, translate, scale, clip-path;
+}
+
+/* ------------------------------------------------------------- small screens */
+
+@media screen and (max-width: 768px) {
+  html.motion-ready .mo-rise {
+    translate: 0 12px;
+  }
+}
+
+/* ------------------------------------------------------------------ print */
+/* A printed page has no scrolling, so anything still waiting to reveal must
+   not come out blank. */
+
+@media print {
+  html.motion-ready .mo-rise,
+  html.motion-ready .mo-fade,
+  html.motion-ready .mo-wipe,
+  html.motion-ready .mo-pop {
+    opacity: 1;
+    translate: none;
+    scale: none;
+    clip-path: none;
+  }
+}
+
+/* --------------------------------------------------------- reduced motion */
+/* Belt and braces: motion.js already returns early, so .motion-ready is never
+   set. These rules only matter if the preference flips mid-session. */
+
+@media (prefers-reduced-motion: reduce) {
+  html.motion-ready .mo-rise,
+  html.motion-ready .mo-fade,
+  html.motion-ready .mo-wipe,
+  html.motion-ready .mo-pop {
+    opacity: 1;
+    translate: none;
+    scale: none;
+    clip-path: none;
+    transition: none;
+  }
+  html.motion-ready .mo-busy {
+    will-change: auto;
+  }
+}

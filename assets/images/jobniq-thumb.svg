@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1256 1148" width="1256" height="1148" role="img" aria-label="JobnIQ placeholder">
+  <rect width="1256" height="1148" fill="#1A0600"/>
+  <rect x="63" y="63" width="1130" height="86" rx="25" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+  <circle cx="106" cy="106" r="15" fill="#FF6333"/>
+  <rect x="149" y="95.68" width="192" height="21" rx="10" fill="rgba(255,255,255,0.14)"/>
+  <rect x="63" y="193" width="192" height="892" rx="25" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+  <rect x="299" y="193" width="894" height="892" rx="25" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+  <rect x="86" y="300" width="146" height="49" rx="25" fill="#FF6333" opacity="0.9"/>
+  <rect x="86" y="416" width="115" height="49" rx="25" fill="rgba(255,255,255,0.14)" opacity="1"/>
+  <rect x="86" y="532" width="115" height="49" rx="25" fill="rgba(255,255,255,0.14)" opacity="1"/>
+  <rect x="86" y="648" width="115" height="49" rx="25" fill="rgba(255,255,255,0.14)" opacity="1"/>
+  <rect x="86" y="764" width="115" height="49" rx="25" fill="rgba(255,255,255,0.14)" opacity="1"/>
+  <rect x="335" y="282" width="769" height="67" rx="33" fill="rgba(255,255,255,0.14)"/>
+  <rect x="335" y="460" width="662" height="67" rx="33" fill="rgba(255,255,255,0.14)"/>
+  <rect x="335" y="638" width="554" height="67" rx="33" fill="rgba(255,255,255,0.14)"/>
+  <rect x="335" y="816" width="447" height="67" rx="33" fill="rgba(255,255,255,0.14)"/>
+  <text x="628" y="582.6" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="86" font-weight="700" fill="rgba(255,255,255,0.92)">JobnIQ</text>
+  <text x="628" y="655.7" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="39" fill="rgba(255,255,255,0.45)">listing thumbnail — replace with cover art</text>
+</svg>
